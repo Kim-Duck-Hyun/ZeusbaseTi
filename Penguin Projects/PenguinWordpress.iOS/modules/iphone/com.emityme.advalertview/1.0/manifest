@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Emityme
+license: Specify your license
+copyright: AppDesignVault
+
+
+# these should not be edited
+name: advalertview
+moduleid: com.emityme.advalertview
+guid: 5a5cfff1-5d33-4086-a1d1-4ec8e7362820
+platform: iphone
+minsdk: 2.0.2.GA

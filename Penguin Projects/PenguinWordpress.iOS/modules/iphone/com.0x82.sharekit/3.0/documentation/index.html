@@ -1,0 +1,155 @@
+<h1>sharekit Module</h1>
+
+<h2>Description</h2>
+
+<p>This module wraps the ShareKit 2.0 framework for iOS devices (both iPhone and iPad).</p>
+
+<p>For more information about ShareKit 2.0 visit the source repository at <a href="">https://github.com/ShareKit/ShareKit</a></p>
+
+<h2>Installation</h2>
+
+<p><a href="">http://wiki.appcelerator.org/display/tis/Using+Titanium+Modules</a></p>
+
+<h2>Changelog</h2>
+
+<p>See <a href="changelog.html">here</a></p>
+
+<h3>Upgrading from 1.x version</h3>
+
+<p>Lots of things changed. Please read the changelog and re-read the configuration
+section to see what changed and what you need to adapt on your application.</p>
+
+<h2>Accessing the sharekit Module</h2>
+
+<p>To access this module from JavaScript, you would do the following:</p>
+
+<pre><code>var sharekit = require("com.0x82.sharekit");
+</code></pre>
+
+<p>The sharekit variable is a reference to the Module object.</p>
+
+<h2>Reference</h2>
+
+<p>This modules exposes three simple methods.</p>
+
+<h3>sharekit.configure({ ... })</h3>
+
+<p>This is required and should be the first thing you call on the module.
+All the configuration parameters can be found on the
+<a href="configutarion.html">configuration</a> page.</p>
+
+<h3>sharekit.logoutFromAll()</h3>
+
+<p>Forgets about all the credentials stored on the device keychain.</p>
+
+<h3>sharekit.share({...})</h3>
+
+<p>Shares an item with ShareKit. The following two arguments ARE ALWAYS REQUIRED:</p>
+
+<ul>
+<li>title[string]:
+&gt;  a title that identifies that URL</li>
+<li>view[Ti.UI.View]:
+&gt; a view associated with the call to share. This could
+be used on the iPad to show a popover from the view that called the
+share action. Like the Sharekit module, passing a UIToolbar or UITabBar on this 
+parameter will cause Sharekit to use a special effect on the action sheet.</li>
+<li><p>sharer[string]: <em>optional</em></p>
+
+<blockquote>
+  <p>if you supply this key to a valid Sharer, the module will try to directly share using the sharer, instead of showing the action sheet. The names of the shares should always start with the Capital Letter (ex: Facebook, Google, ReadItLater, Delicious). The list of available Sharers are:</p>
+</blockquote>
+
+<p>Copy
+  Mail
+  Safari
+  PhotoAlbum
+  TextMessage
+  Vkontakte
+  Evernote
+  Facebook
+  FoursquareV2
+  Flickr
+  GoogleReader
+  Instapaper
+  LinkedIn
+  Pinboard
+  ReadItLater
+  Tumblr
+  Twitter</p></li>
+</ul>
+
+<h4>sharing links</h4>
+
+<ul>
+<li>link[string]:
+&gt; the valid url you want to share</li>
+</ul>
+
+<h4>sharing images</h4>
+
+<ul>
+<li>image[blob]:
+&gt; the image blob to share</li>
+</ul>
+
+<h4>sharing texts</h4>
+
+<ul>
+<li>text[string]:
+&gt; the text block to share</li>
+</ul>
+
+<h4>sharing files</h4>
+
+<ul>
+<li>file[blob]:
+&gt; the file blob to share</li>
+<li>filename[string]:
+&gt; OPTIONAL -> the filename of the file</li>
+<li>mimetype[string]:
+&gt; OPTIONAL but recommended, since Titanium can't currently guess
+a mimetype from a file</li>
+</ul>
+
+<h2>Tips and tricks / FAQ</h2>
+
+<h3>How to limit the services available to the user?</h3>
+
+<p>Copy the <code>assets/Sharers.plist</code> to your Resources directory, edit it using
+XCode, remove the services you want, and use the <code>sharers_plist_name</code> key on
+the configuration call, to specify the path to your own sharer. See the
+<a href="configuration.html">Configuration documentation</a> for more information.</p>
+
+<h3>Does this module uses the new iOS5 Twitter capabilities?</h3>
+
+<p>Yes, as long as the application runs on an iOS5 device. If not, the module
+automatically reverts to a in-app strategy, like before.</p>
+
+<h3>Help! Facebook auth doesn't work!</h3>
+
+<p>Please make sure you've followed the new procedure to configure Facebook, by
+reading the <a href="configuration.html">Configuration documentation</a></p>
+
+<h3>Can I i18n/l10n this module?</h3>
+
+<p>Yes! Please look inside the <code>example/strings.xml</code> file to see a file with
+all the Strings available to be translated. Just follow the official 
+Titanium Guide for internationalization and you should be ok!</p>
+
+<p><a href="">https://wiki.appcelerator.org/display/guides/Internationalization</a></p>
+
+<h2>Usage</h2>
+
+<p>Please see the examples/app.js for a full app example.</p>
+
+<h2>Author</h2>
+
+<p>Ruben Fonseca, root (at) cpan (dot) org</p>
+
+<p>You can also find me on <a href="http://github.com/rubenfonseca">github</a> and on my
+<a href="http://blog.0x82.com">blog</a></p>
+
+<h2>License</h2>
+
+<p>This module is licensed under the MIT License. Please see the LICENSE file for</p>

@@ -1,0 +1,47 @@
+<h1>createpdf Module</h1>
+<h2>Description</h2>
+<p>This module allows you to create PDF from the JSON string. You need to create One JSON string from your Javascript code and then pass it to createPDF function as a parameter. You can find the JSON string Skeleton in example. Generated PDF is saved at application data directory.</p>
+<p>Updates in version 1.1 :</p>
+<ul>
+<li>Remote Image support to be set as background of PDF file to be generated.</li>
+</ul>
+<p>Updates in version 1.2:</p>
+<ul>
+<li>Add style to the text element (for ex. font size, font color, font style[i.e. normal,bold], width, height, left margin etc.)</li>
+<li>Define desired width, height, default margins of your PDF file.</li>
+<li>You can render remote Images,images from application resource directory as well from application data directory.</li>
+<li>You can define desired width, height and left margin of your image element.</li>
+</ul>
+<p>see example for the JSON string skeleton.</p>
+<h2>Accessing the createpdf Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var createpdf = require("inic.createPDF");
+</code></pre>
+<p>The createpdf variable is a reference to the Module object. </p>
+<h2>Reference</h2>
+<p>var view = createpdf.createView();</p>
+<p>Function</p>
+<p>view.createPDF(pdfname,pdfbgimg,pdfdata,pdfsize);</p>
+<p>This function has four string argument(pdfname,pdfbgimg,pdfdata,pdfsize).</p>
+<p>pdfname - This parameter contains name of the pdf to be generated.</p>
+<p>For Ex:
+var pdfname = "IndiaNIC.pdf";</p>
+<p>pdfbgimg - This parameter contains background image of the pdf file to be generated. Preferable Dimension are 320X480 and 640X960 for iPhone, 768X1024 for iPad</p>
+<p>For Ex:
+ Case 1: Local Image (Note: Must resides in Resource Directory/Application Data Directory)
+    var pdfbgimg = "pdfbg.png";</p>
+<p>Case 2: Remote Image (Online URL of image)
+    var pdfbgimg = "http://www.domainname.com/bgimage.jpg";</p>
+<p>pdfdata - Third parameter contains JSON string data. You can find example of this JSON string in "app.'s" in the example folder.</p>
+<p>pdfsize- Fourth parameter contains JSON string, which define pdf dimensions like width,height and default margins(i.e. left margin ,top margin etc.).You can find example of this JSON string in "app.'s" in the example folder.</p>
+<h3><strong>_PROJECTNAMEASIDENTIFIER</strong>.function</h3>
+<p>TODO: This is an example of a module function.</p>
+<h3><strong>_PROJECTNAMEASIDENTIFIER</strong>.property</h3>
+<p>TODO: This is an example of a module property.</p>
+<h2>Usage</h2>
+<p>See example.</p>
+<h2>Author</h2>
+<p>author: IndiaNIC
+email: appsdev@indianic.com</p>
+<h2>License</h2>
+<p>The code is not be distributed as is. Any use of the code is to be used with the credits in tact to IndiaNIC(www.indianic.com).</p>
