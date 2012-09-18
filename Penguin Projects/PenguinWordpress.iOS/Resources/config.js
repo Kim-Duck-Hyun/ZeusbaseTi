@@ -54,12 +54,12 @@ var config = {
 
   // use only one skin, put comment on the other selections
   // "SKIN"                : "blue", 
-  // "SKIN"                : "red", 
+  "SKIN"                : "red", 
   // "SKIN"                : "cloud", 
   // "SKIN"                : "brown", 
   // "SKIN"                : "magen", 
   // "SKIN"                : "orange", 
-   "SKIN"                : "silver", 
+   //"SKIN"                : "silver", 
   // "SKIN"                : "green", 
   // "SKIN"                : "silvercloud", 
   // "SKIN"                : "blueblue", 
