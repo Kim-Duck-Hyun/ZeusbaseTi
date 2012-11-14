@@ -1,0 +1,198 @@
+<!doctype html>  
+<!--[if IE 6 ]><html lang="en-us" class="ie6"> <![endif]-->
+<!--[if IE 7 ]><html lang="en-us" class="ie7"> <![endif]-->
+<!--[if IE 8 ]><html lang="en-us" class="ie8"> <![endif]-->
+<!--[if (gt IE 7)|!(IE)]><!-->
+<html lang="en-us"><!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+	<title>Titanium Gallery - NextGen – Facebook – Picasa – Flickr</title>
+	
+	<meta name="description" content="Thank you for purchasing my component. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!">
+	<meta name="author" content="Daniel Dimov">
+	<meta name="copyright" content="Daniel Dimov">
+	<meta name="generator" content="Documenter v1.6 http://rxa.li/documenter">
+	<meta name="date" content="2012-06-01T00:00:00+02:00">
+	
+	<link rel="stylesheet" href="css/documenter_style.css" media="all">
+	
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+
+	<script src="js/jquery.1.6.4.js"></script>
+	
+	<script src="js/jquery.scrollTo-1.4.2-min.js"></script>
+	<script src="js/jquery.easing.js"></script>
+	
+	<link rel="stylesheet" href="css/shDocumenter.css" media="screen">
+	<script src="js/shCore.js"></script>
+	<script src="js/shBrushJScript.js"></script>
+	<script>SyntaxHighlighter.defaults['toolbar'] = false;SyntaxHighlighter.all();</script>
+
+	<script>document.createElement('section');var duration=500,easing='swing';</script>
+	<script src="js/script.js"></script>
+	
+	<style>
+		html{background-color:#FFFFFF;color:#383838;}
+		::-moz-selection{background:#444444;color:#DDDDDD;}
+		::selection{background:#444444;color:#DDDDDD;}
+		#documenter_sidebar #documenter_logo{background-image:url();}
+		a{color:#0000FF;}
+		hr{border-top:1px solid #EBEBEB;border-bottom:1px solid #FFFFFF;}
+		#documenter_sidebar, #documenter_sidebar ol a{background-color:#DDDDDD;color:#222222;}
+		#documenter_sidebar ol a{-webkit-text-shadow:1px 1px 0px #EEEEEE;-moz-text-shadow:1px 1px 0px #EEEEEE;text-shadow:1px 1px 0px #EEEEEE;}
+		#documenter_sidebar ol{border-top:1px solid #AAAAAA;}
+		#documenter_sidebar ol a{border-top:1px solid #EEEEEE;border-bottom:1px solid #AAAAAA;color:#444444;}
+		#documenter_sidebar ol a:hover{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_sidebar ol a.current{background:#444444;color:#DDDDDD;border-top:1px solid #444444;}
+		#documenter_copyright{display:block !important;visibility:visible !important;}
+	</style>
+	
+</head>
+<body>
+	<div id="documenter_sidebar">
+		<a href="#documenter_cover" id="documenter_logo"></a>
+		<ol id="documenter_nav">
+			<li><a class="current" href="#documenter_cover">Start</a></li>
+			<li><a href="#how_to_load_the_gallery_module">How to load the gallery module</a></li>
+			<li><a href="#how_to_use_the_gallery">How to use the gallery</a></li>
+			<li><a href="#configure_gallery">Configure gallery</a></li>
+			<li><a href="#changes_colors">Changes colors</a></li>
+			<li><a href="#facebook_share_settings">Facebook Share Settings</a></li>
+			<li><a href="#example">Example</a></li>
+			<li><a href="#sources_and_credits">Sources and Credits</a></li>
+
+		</ol>
+		<div id="documenter_copyright">Copyright Daniel Dimov 2012<br>
+		made with the <a href="http://rxa.li/documenter">Documenter v1.6</a> 
+		</div>
+	</div>
+	<div id="documenter_content">
+	<section id="documenter_cover"><h1>Titanium Gallery</h1><h2>NextGen – Facebook – Picasa – Flickr</h2><hr><ul><li>Created: 03/10/2011</li><li>latest Update: 06/01/2012</li><li>By: Daniel Dimov</li><li>Email: <a href="mailto:&#100;&#105;&#109;&#111;&#118;&#100;&#97;&#110;&#105;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;">&#100;&#105;&#109;&#111;&#118;&#100;&#97;&#110;&#105;&#101;&#108;&#64;&#121;&#97;&#104;&#111;&#111;&#46;&#99;&#111;&#109;</a></li></ul><p>Thank you for purchasing my component. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form here. Thanks so much!</p></section><section id="how_to_load_the_gallery_module">
+	<h3>How to load the gallery module</h3><hr class="notop">
+<ol>
+	<li>
+		Copy the &ldquo;<strong>lib</strong>&rdquo; and &ldquo;<strong>common</strong>&rdquo; folder (from the &ldquo;<strong>source</strong>&rdquo; folder) inside you project &ldquo;Resources&rdquo; &nbsp;folder (old or new)</li>
+	<li>
+		Copy all the strings from &ldquo;<strong>strings.xml</strong>&rdquo; file (from the &ldquo;<strong>source-&gt;i18n-&gt;en</strong>&rdquo; folder) into your &ldquo;<strong>strings.xml</strong>&rdquo; (or if you don&rsquo;t have that file-folder copy the folder &ldquo;<strong>i18n</strong>&rdquo; into your project next to the &ldquo;Resources&rdquo; folder)</li>
+	<li>
+		Now the files are in place. To load the modules add the following code somewhere in top of app.js or some other file</li>
+</ol>
+<pre class="brush: js">
+//################# MODULES ##################
+var VARS =require(&#39;common/globals&#39;); //Here we store all global variables / settings
+var Gallery=require(&#39;lib/galleryModule&#39;); //Here are the functions to create the gallery
+</pre>
+<p>
+	<br>
+	This is the folder structure you should end with.</p>
+<p>
+	<img alt="Folder Structure" src="assets/images/image_1.png" style="width: 242px; height: 409px;"></p>
+</section>
+<section id="how_to_use_the_gallery">
+	<h3>How to use the gallery</h3><hr class="notop">
+<ol>
+	<li>
+		First create a <strong>window </strong>and <strong>tab </strong>where you want the gallery to be opened in. You will pass later this objects as parameters.&nbsp; If you are new to Titanium check the<br>
+		<strong>&ldquo;example-&gt;Reources-&gt;app.js&rdquo;</strong> to see how to create that window and the tab.</li>
+	<li>
+		To create the gallery (flicr,facebook,picasa or nextgen) this is the structure</li>
+</ol>
+<pre class="brush: js">
+<strong> </strong><strong>Gallery.createGalleryList({</strong>
+<strong>      win:galleryWindow,         //The window to display in [Required]</strong>
+<strong>      title:&quot;NextGen Gallery&quot;,   //Title of the window [Required]
+      type:VARS.<strike>_NEXT_GEN</strike>,       //The type of the gallery [Required]</strong> <strong>[_NEXT_GEN,_FB_GALLERY,_PICASA,_FLICKR]</strong>
+     <strong> tab:tab1,                  //The tab that gallery will open its sub views [Required]</strong>
+<strong>      </strong><strong>openType:1,                //For future modifications of the gallery </strong><strong>[Required]</strong>
+<strong>     
+      id:1,                      //Id of the NextGenAlbum [Required if type=_NEXT_GEN]
+      url:VARS._NextGen_Address, //Adress of your blog [Required if type=_NEXT_GEN]
+
+      page:VARS._FBPageID,       //Facebook Page id  [Required if type=_FB_GALLERY]
+   
+      userID:VARS._PicasaUserId,  //Picasa User id [Required if type=_PICASA]
+
+      appKEY:VARS._FlickrAppKEY,  //Flickr app key [Required if type=_FLICKR]
+&nbsp; &nbsp;&nbsp;  userID:VARS._FlickrUserID,  //Flickr User id [Required if type=_FLICKR]
+                          });</strong>
+</pre>
+<p>
+	After this call the gallery will be in the wiindow you passed as parameter. in this example galleryWindow.<br>
+	<br>
+	Then you should open that window in the tab you passed as parameter.</p>
+<pre class="brush: js">
+tab1.open(galleryWindow);
+</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="configure_gallery">
+	<h3>Configure gallery</h3><hr class="notop">
+<p>
+	Now you will configure the gallery to use your gallery insted of the default.<br>
+	This will be very easy<br>
+	&nbsp;</p>
+<ol>
+	<li>
+		Open &quot;<strong>common-&gt;globals.js</strong>&quot;</li>
+	<li>
+		In the top you will notice &quot;USER DATA&quot;</li>
+	<li>
+		Change this values to suit yor needs</li>
+	<li>
+		Build the project, You will see your photos.</li>
+</ol>
+<p>
+	*Remember to change the Flickr App Key with your own</p>
+</section>
+<section id="changes_colors">
+	<h3>Changes colors</h3><hr class="notop">
+<ol>
+	<li>
+		Once again go into &quot;<strong>common-&gt;globals.js</strong>&quot;</li>
+	<li>
+		Here you will notice &quot;GLOBAL COLORS&quot;</li>
+	<li>
+		Change the values to suit your needs.</li>
+</ol>
+</section>
+<section id="facebook_share_settings">
+	<h3>Facebook Share Settings</h3><hr class="notop">
+<p>
+	To set up the Facebook Share just add the following code in your app.js</p>
+<pre class="brush: js">
+//############### SHARE SETTINGS #####################
+Ti.Facebook.appid = &quot;134793934930&quot;; //Change this with your own Facebook app id
+Ti.Facebook.permissions = [&#39;publish_stream&#39;, &#39;read_stream&#39;];
+</pre>
+<p>
+	&nbsp;</p>
+</section>
+<section id="example">
+	<h3>Example</h3><hr class="notop">
+<p>
+	If you have dificulties to follow the documentation please &quot;<a href="https://wiki.appcelerator.org/display/tis/Importing+an+Existing+Project">Open project from existing source</a>&quot; and there use the &quot;<strong>example</strong>&quot; folder.</p>
+<p>
+	Review the code and if you have any questions email me.</p>
+</section>
+<section id="sources_and_credits">
+	<h3>Sources and Credits</h3><hr class="notop">
+<p>
+	I have used the <a href="http://www.flickr.com/photos/we-are-envato/">Envanto Flick profile</a> fo shocase my work.</p>
+<p>
+	Images that I have used in the projects are</p>
+<ul>
+	<li>
+		<a href="http://www.iconarchive.com/show/social-networks-pro-icons-by-artbees.html">Social Networks Pro Icons by Artbees</a></li>
+</ul>
+<hr>
+<p>
+	Once again, thank you so much for purchasing this&nbsp; module. As I said at the beginning, I&#39;d be glad to help you if you have any questions relating to this theme. No guarantees, but I&#39;ll do my best to assist.</p>
+<p>
+	<strong>Daniel Dimov</strong></p>
+</section>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,232 @@
+Logfile initialized
+[INFO] logfile = /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build.log
+[DEBUG] /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py simulator PenguinPictureShow /SDK/Frameworks/Android/android-sdk-macosx /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC com.littlepenguinsoftware.PenguinPictureShow 7 WVGA800 /127.0.0.1:59109
+[INFO] Building PenguinPictureShow for Android ... one moment
+[INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[DEBUG] /SDK/Frameworks/Android/android-sdk-macosx/tools/emulator -avd titanium_7_WVGA800 -port 5560 -sdcard /Users/hyokosies/.titanium/titanium_7_WVGA800.sdcard -logcat *:d,*,TiAPI:V -no-boot-anim -partition-size 128
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 65 seconds)
+[DEBUG] waited 65.820145 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[DEBUG] com.littlepenguinsoftware.PenguinPictureShow installed? False
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[INFO] Detected change in tiapp.xml, or assets deleted. Forcing full re-build...
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/appicon.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/appicon.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/default.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/app.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/app.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/app.jss => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/app.jss
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/databases/app.sqlite => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/databases/app.sqlite
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/account_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/account_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/account_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/account_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/calls_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/calls_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/calls_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/calls_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/cases_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/cases_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/cases_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/cases_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/contacts_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/contacts_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/contacts_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/contacts_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/emps_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/emps_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/emps_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/emps_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/leads_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/leads_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/leads_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/leads_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/meetings_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/meetings_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/meetings_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/meetings_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/opps_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/opps_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/opps_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/opps_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/tasks_off.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/tasks_off.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/dashboard/tasks_on.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/dashboard/tasks_on.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/layouts/banner.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/layouts/banner.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/assets/images/layouts/tabbar.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/assets/images/layouts/tabbar.png
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/components/controller.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/components/controller.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/components/database.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/components/database.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/components/model.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/components/model.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/components/scrollablegridview.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/components/scrollablegridview.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/components/view.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/components/view.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/controllers/dashboard.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/controllers/dashboard.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/controllers/example.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/controllers/example.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/controllers/main.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/controllers/main.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/controllers/tab.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/controllers/tab.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/core/timvc.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/core/timvc.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/models/setting.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/models/setting.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/views/dashboard/simplewindow.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/views/dashboard/simplewindow.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/views/example/dashboard.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/views/example/dashboard.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/views/example/multidashboard.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/views/example/multidashboard.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/views/layouts/default.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/views/layouts/default.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/views/main/home.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/views/main/home.js
+[TRACE] COPYING CREATED FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/mvc/views/tab/simplewindow.js => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/mvc/views/tab/simplewindow.js
+[TRACE] Generating Java Classes
+[DEBUG] Processing Android resource drawables
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-land-hdpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-land-hdpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-land-ldpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-land-ldpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-port-hdpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-port-hdpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-port-ldpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-port-ldpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-hdpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-land-hdpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-ldpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-land-ldpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-mdpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-land-mdpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-hdpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-port-hdpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-ldpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-port-ldpi/default_d44e27d97b.png
+[TRACE] COPYING FILE: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-mdpi/default.png => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-port-mdpi/default_d44e27d97b.png
+[DEBUG] app stylesheet => /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/ApplicationStylesheet.java
+[DEBUG] copying app icon: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/appicon.png
+[DEBUG] generating theme.xml
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-land-hdpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-land-hdpi/background.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-land-ldpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-land-ldpi/background.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-port-hdpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-port-hdpi/background.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-long-port-ldpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-long-port-ldpi/background.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-hdpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-land-hdpi/background.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-ldpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-land-ldpi/background.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-land-mdpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-land-mdpi/background.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-hdpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-port-hdpi/background.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-ldpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-port-ldpi/background.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-mdpi/default.png
+[DEBUG] copying /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/Resources/android/images/res-notlong-port-mdpi/default.png splash screen to /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/res/drawable-notlong-port-mdpi/background.png
+[DEBUG] found splash screen at /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/assets/Resources/default.png
+[TRACE] Writing out AndroidManifest.xml
+[DEBUG] adding /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/ApplicationStylesheet.java to javac build list
+[DEBUG] adding /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/PenguinpictureshowActivity.java to javac build list
+[DEBUG] adding /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/PenguinpictureshowAppInfo.java to javac build list
+[DEBUG] adding /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/PenguinpictureshowApplication.java to javac build list
+[DEBUG] adding /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/R.java to javac build list
+[DEBUG] Building Java Sources: "/Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/ApplicationStylesheet.java" "/Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/PenguinpictureshowActivity.java" "/Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/PenguinpictureshowAppInfo.java" "/Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/PenguinpictureshowApplication.java" "/Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/gen/com/littlepenguinsoftware/PenguinPictureShow/R.java"
+[INFO] Waiting for SDCard to become available..
+[INFO] Compiling Android Resources... This could take some time
+[DEBUG] Android classes.dex built
+[DEBUG] creating unsigned apk: /Users/hyokosies/git/ZeusbaseTiOS/PenguinMVC/build/android/bin/app-unsigned.apk
+[DEBUG] from resource zip => assets/Resources/mvc/assets/databases/app.sqlite
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/account_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/account_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/calls_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/calls_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/cases_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/cases_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/contacts_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/contacts_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/emps_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/emps_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/leads_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/leads_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/meetings_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/meetings_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/opps_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/opps_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/tasks_off.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/dashboard/tasks_on.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/layouts/banner.png
+[DEBUG] from resource zip => assets/Resources/mvc/assets/images/layouts/tabbar.png
+[DEBUG] from resource zip => assets/Resources/mvc/components/controller.js
+[DEBUG] from resource zip => assets/Resources/mvc/components/database.js
+[DEBUG] from resource zip => assets/Resources/mvc/components/model.js
+[DEBUG] from resource zip => assets/Resources/mvc/components/scrollablegridview.js
+[DEBUG] from resource zip => assets/Resources/mvc/components/view.js
+[DEBUG] from resource zip => assets/Resources/mvc/controllers/dashboard.js
+[DEBUG] from resource zip => assets/Resources/mvc/controllers/example.js
+[DEBUG] from resource zip => assets/Resources/mvc/controllers/main.js
+[DEBUG] from resource zip => assets/Resources/mvc/controllers/tab.js
+[DEBUG] from resource zip => assets/Resources/mvc/core/timvc.js
+[DEBUG] from resource zip => assets/Resources/mvc/models/setting.js
+[DEBUG] from resource zip => assets/Resources/mvc/views/dashboard/simplewindow.js
+[DEBUG] from resource zip => assets/Resources/mvc/views/example/dashboard.js
+[DEBUG] from resource zip => assets/Resources/mvc/views/example/multidashboard.js
+[DEBUG] from resource zip => assets/Resources/mvc/views/layouts/default.js
+[DEBUG] from resource zip => assets/Resources/mvc/views/main/home.js
+[DEBUG] from resource zip => assets/Resources/mvc/views/tab/simplewindow.js
+[DEBUG] from resource zip => assets/Resources/app.js
+[DEBUG] from resource zip => assets/Resources/app.jss
+[DEBUG] from resource zip => assets/Resources/appicon.png
+[DEBUG] from resource zip => assets/Resources/default.png
+[DEBUG] from resource zip => assets/Resources/ti.cloud.js
+[DEBUG] from resource zip => assets/app.json
+[DEBUG] from resource zip => assets/index.json
+[DEBUG] from resource zip => assets/tiapp.xml
+[DEBUG] from resource zip => res/drawable/appicon.png
+[DEBUG] from resource zip => res/drawable/background.png
+[DEBUG] from resource zip => res/drawable/close.png
+[DEBUG] from resource zip => res/drawable/facebook_login.png
+[DEBUG] from resource zip => res/drawable/facebook_login_down.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide.png
+[DEBUG] from resource zip => res/drawable/facebook_login_wide_down.png
+[DEBUG] from resource zip => res/drawable/facebook_logout.png
+[DEBUG] from resource zip => res/drawable/facebook_logout_down.png
+[DEBUG] from resource zip => res/layout/titanium_tabgroup.xml
+[DEBUG] from resource zip => AndroidManifest.xml
+[DEBUG] from resource zip => resources.arsc
+[DEBUG] from resource zip => res/drawable-hdpi/close.png
+[DEBUG] from resource zip => res/drawable-ldpi/close.png
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-hdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-land-ldpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-hdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-long-port-ldpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-hdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-ldpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-land-mdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-hdpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-ldpi/default_d44e27d97b.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/background.png
+[DEBUG] from resource zip => res/drawable-notlong-port-mdpi/default_d44e27d97b.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/thirdparty.jar => org/apache/Commons-NOTICE.txt
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/thirdparty.jar => org/apache/HttpComponents-NOTICE.txt
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/thirdparty.jar => org/apache/mime4j-NOTICE.txt
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/build.properties
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/background.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_18.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_check_buttonless_on_48.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_18.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_more_48.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_normal.9.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_pressed.9.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/btn_picker_selected.9.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/default_icon.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/titanium.jar => org/appcelerator/titanium/res/drawable/photoDefault.png
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-facebook.jar => ti/modules/titanium/facebook/LICENSE
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.js
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/binding.min.js
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/json2.js
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.js
+[DEBUG] from JAR /Users/hyokosies/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/modules/titanium-ui.jar => ti/modules/titanium/ui/widget/webview/polling.min.js
+[DEBUG] installing native SDK libs
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.016578 seconds on emulator to get ready
+[INFO] Installing application on emulator
+[INFO] Launching application ... PenguinPictureShow
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] flg=0x10200000 cmp=com.littlepenguinsoftware.PenguinPictureShow/.PenguinpictureshowActivity }
+
+[INFO] Deployed PenguinPictureShow ... Application should be running.
+[INFO] Forwarding host port 59109 to device for debugging.
+[INFO] Android Emulator has exited

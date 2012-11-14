@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+	<!-- Gallery STRING -->
+	<string name="appName">Titanium Gallery</string>
+	<string name="fb">Facebook</string>
+	<string name="cancel">Cancel</string>
+	<string name="share">Share</string>
+	<string name="share_fb">Share on Facebook</string>
+	<string name="download">Download</string>
+	<string name="nc">No Connection</string>
+	<string name="ce">Communication Error Occureed</string>
+	<string name="error">Error!</string>
+	<string name="succ">Success!</string>
+	<string name="sharedimg">Image is successfuly uploaded.</string>
+	<string name="pg">Photo Gallery</string>
+	<string name="image_doownloaded">Image downloaded in photo gallery</string>
+	<string name="loading_images">Loading Photos. Please wait..</string>
+	<string name="loading_albums">Loading Albums. Please wait..</string>
+	<string name="loading_photo">Loading Big Images. Please wait...</string>
+	<string name="tiGallery">TitaniumGallery</string>
+	
+</resources>
