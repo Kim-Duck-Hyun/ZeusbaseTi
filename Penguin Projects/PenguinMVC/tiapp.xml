@@ -14,13 +14,13 @@
         <target device="blackberry">false</target>
     </deployment-targets>
     <sdk-version>2.1.4.GA</sdk-version>
-    <id>com.littlepenguinsoftware.PenguinPictureShow</id>
-    <name>PenguinPictureShow</name>
+    <id>com.littlepenguinsoftware.PenguinPeople</id>
+    <name>PenguinPeople</name>
     <version>1.0</version>
-    <publisher>hyokosdeveloper</publisher>
+    <publisher>Little Penguin Software</publisher>
     <url>http://www.littlepenguinsoftware.com</url>
-    <description>not specified</description>
-    <copyright>2012 by hyokosdeveloper</copyright>
+    <description>Contact Manager</description>
+    <copyright>Little Penguin Software</copyright>
     <icon>appicon.png</icon>
     <persistent-wifi>false</persistent-wifi>
     <prerendered-icon>false</prerendered-icon>

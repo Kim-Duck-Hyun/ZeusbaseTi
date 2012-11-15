@@ -1,8 +1,8 @@
-#appname: PenguinPictureShow
-#publisher: hyokosdeveloper
-#url: http://www.littlepenguinsoftware.com
-#image: appicon.png
-#appid: com.littlepenguinsoftware.PenguinPictureShow
-#desc: undefined
-#type: ipad
-#guid: bc343291-8641-40ee-aa6b-3cf482287f91
+#appname:PenguinPictureShow
+#publisher:Little Penguin Software
+#url:http://www.littlepenguinsoftware.com
+#image:appicon.png
+#appid:com.littlepenguinsoftware.PenguinPeople
+#desc:Contact Manager
+#type:ipad
+#guid:bc343291-8641-40ee-aa6b-3cf482287f91

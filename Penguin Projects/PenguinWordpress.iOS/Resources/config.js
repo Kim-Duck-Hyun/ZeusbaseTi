@@ -54,7 +54,7 @@ var config = {
 
   // use only one skin, put comment on the other selections
   // "SKIN"                : "blue", 
-  "SKIN"                : "red", 
+  //"SKIN"                : "red", 
   // "SKIN"                : "cloud", 
   // "SKIN"                : "brown", 
   // "SKIN"                : "magen", 
@@ -72,7 +72,7 @@ var config = {
   // "SKIN"                : "orenjiblack", 
   // "SKIN"                : "brownlight", 
   //"SKIN"                : "bluenext", 
-  // "SKIN"                : "blacklight", 
+   "SKIN"                : "blacklight", 
 
   "DB_NAME"             : "WpApp"
 };
