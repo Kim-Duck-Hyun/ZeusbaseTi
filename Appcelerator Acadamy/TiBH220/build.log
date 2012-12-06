@@ -1,0 +1,18 @@
+Logfile initialized
+[INFO] logfile = /Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH220/build.log
+[DEBUG] /Users/hyokosdeveloper/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py simulator TiBH220 /SDK/Frameworks/Android/android-sdk-macosx /Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH220 com.appc.tibh220 7 WVGA800 /127.0.0.1:56494
+[INFO] Building TiBH220 for Android ... one moment
+[INFO] Titanium SDK version: 2.1.4 (11/09/12 12:46 51f2c64)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 0 devices/emulators
+[DEBUG] /SDK/Frameworks/Android/android-sdk-macosx/tools/emulator -avd titanium_7_WVGA800 -port 5560 -sdcard /Users/hyokosdeveloper/.titanium/titanium_7_WVGA800.sdcard -logcat *:d,*,TiAPI:V -no-boot-anim -partition-size 128
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 0 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators

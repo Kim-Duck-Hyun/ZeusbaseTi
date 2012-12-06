@@ -1,0 +1,11 @@
+Logfile initialized
+[INFO] logfile = /Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH215/build.log
+[INFO] logfile = /Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH215/build.log
+[DEBUG] /Users/hyokosdeveloper/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py emulator TiBountyHunter-215 /SDK/Frameworks/Android/android-sdk-macosx /Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH215 com.appcelerator.tibh 7 WVGA800
+[DEBUG] /Users/hyokosdeveloper/Library/Application Support/Titanium/mobilesdk/osx/2.1.4.GA/android/builder.py simulator TiBountyHunter-215 /SDK/Frameworks/Android/android-sdk-macosx /Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH215 com.appcelerator.tibh 7 WVGA800 /127.0.0.1:56448
+[INFO] Launching Android emulator...one moment
+[DEBUG] From: /SDK/Frameworks/Android/android-sdk-macosx/tools/emulator
+[DEBUG] SDCard: /Users/hyokosdeveloper/.titanium/android2.sdcard
+[DEBUG] AVD ID: 7
+[DEBUG] AVD Skin: WVGA800
+[DEBUG] SDK: /SDK/Frameworks/Android/android-sdk-macosx
