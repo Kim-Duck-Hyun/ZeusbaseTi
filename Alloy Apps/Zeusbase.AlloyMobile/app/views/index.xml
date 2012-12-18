@@ -1,0 +1,29 @@
+<Alloy>
+	<TabGroup>
+		<Tab title="Alarm" icon="alarm@2x.png">
+			<Window title="Alarm">
+				<Label>Alarm</Label>
+			</Window>
+		</Tab>
+		<Tab title="Settings" icon="cog_01@2x.png">
+			<Window title="Settings">
+				<Label>Settings View</Label>
+			</Window>
+		</Tab>
+		<Tab title="Web" icon="globe@2x.png">
+			<Window title="Web">
+				<Label>Web View</Label>
+			</Window>
+		</Tab>
+		<Tab title="Home" icon="house@2x.png">
+			<Window title="Home">
+				<Label>Home Screen View</Label>
+			</Window>
+		</Tab>						
+		<Tab title="Desktop" icon="monitor@2x.png">
+			<Window title="Desktop">
+				<Label>Desktop</Label>
+			</Window>
+		</Tab>
+	</TabGroup>
+</Alloy>

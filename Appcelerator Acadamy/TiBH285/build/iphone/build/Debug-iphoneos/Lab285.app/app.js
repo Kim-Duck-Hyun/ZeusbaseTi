@@ -1,1 +1,4 @@
-/Users/hyokosdeveloper/git/ZeusbaseTi/Appcelerator Acadamy/TiBH285/Resources/app.js
+(function() {
+	var ApplicationTabGroup = require('ui/TabGroup');
+	new ApplicationTabGroup().open();
+})();
