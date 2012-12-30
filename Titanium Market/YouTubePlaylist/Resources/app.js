@@ -13,7 +13,7 @@ var win = Titanium.UI.createWindow({
 	tabBarHidden : true
 });
 var tab1 = Titanium.UI.createTab({
-	title : 'Yourube Playlist',
+	title : 'Penguin Social YouTube',
 	window : win
 });
 
