@@ -1,0 +1,8 @@
+tmp
+*.class
+*.pyc
+*.pyo
+build/
+.settings/
+.idea/
+/.fastdev.lock

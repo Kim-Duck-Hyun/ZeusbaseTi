@@ -1,0 +1,5 @@
+Version 0.1
+===========
+
+* Implemented single and multiple file download
+* Refactored the code to not pollute the global scope
