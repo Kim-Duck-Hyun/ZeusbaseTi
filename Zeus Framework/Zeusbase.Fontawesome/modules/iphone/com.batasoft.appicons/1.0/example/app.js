@@ -35,7 +35,7 @@
 
 
 /* Example Code 2 
-
+*/
 (function(){
 
 	var icons = require('/ui/icons');
@@ -55,9 +55,10 @@
 
 })();
 
-*/
 
 
+/**
 Window = require('/ui/ApplicationWindow');
 
 new Window().open();
+*/

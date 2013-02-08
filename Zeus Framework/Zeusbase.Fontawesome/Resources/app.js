@@ -1,64 +1,63 @@
-// this sets the background color of the master UIView (when there are no windows/tab groups on it)
-Titanium.UI.setBackgroundColor('#000');
+/*
+ * Single Window Application Template:
+ * A basic starting point for your application.  Mostly a blank canvas.
+ * 
+ * In app.js, we generally take care of a few things:
+ * - Bootstrap the application with any data we need
+ * - Check for dependencies like device type, platform version or network connection
+ * - Require and open our top-level UI component
+ *  
+ */
 
-// create tab group
-var tabGroup = Titanium.UI.createTabGroup();
+/* Example Code 1
+*/
+/**
+(function(){
 
+	var icons = require('/ui/icons');
 
-//
-// create base UI tab and root window
-//
-var win1 = Titanium.UI.createWindow({  
-    title:'Tab 1',
-    backgroundColor:'#fff'
-});
-var tab1 = Titanium.UI.createTab({  
-    icon:'KS_nav_views.png',
-    title:'Tab 1',
-    window:win1
-});
+	var win   = Ti.UI.createWindow({backgroundColor:'#fff'});
 
-var label1 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 1',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
+	win.add(
+		Ti.UI.createButton( {
+			title: icons.envelope + ' Contact',
+			font: {fontFamily: 'AppIcons', fontSize:'14pt' },
+			color: 'black',
+			width: '50%',
+			center: {x:'50%', y:'50%'}
+		})
 
-win1.add(label1);
+	);
+	win.open();
 
-//
-// create controls tab and root window
-//
-var win2 = Titanium.UI.createWindow({  
-    title:'Tab 2',
-    backgroundColor:'#fff'
-});
-var tab2 = Titanium.UI.createTab({  
-    icon:'KS_nav_ui.png',
-    title:'Tab 2',
-    window:win2
-});
-
-var label2 = Titanium.UI.createLabel({
-	color:'#999',
-	text:'I am Window 2',
-	font:{fontSize:20,fontFamily:'Helvetica Neue'},
-	textAlign:'center',
-	width:'auto'
-});
-
-win2.add(label2);
+})();
+*/
 
 
+/* Example Code 2 
+*/
+/**
+(function(){
 
-//
-//  add tabs
-//
-tabGroup.addTab(tab1);  
-tabGroup.addTab(tab2);  
+	var icons = require('/ui/icons');
+
+	var win   = Ti.UI.createWindow({backgroundColor:'#fff'});
+
+	win.add(
+		Ti.UI.createLabel( {
+			text: icons.rss,
+			font: {fontFamily: 'AppIcons', fontSize:'72pt' },
+			color: '#eee',
+			center: {x:'50%', y:'50%'}
+		})
+
+	);
+	win.open();
+
+})();
+*/
 
 
-// open tab group
-tabGroup.open();
+Window = require('/ui/ApplicationWindow');
+
+new Window().open();
