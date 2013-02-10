@@ -2,6 +2,7 @@
 function ApplicationWindow() {
 	//load component dependencies
 	var AllIconView  = require('/ui/AllIconView'),
+		IconButtonView = require('/ui/IconButtonView'),
 		IconListView = require('/ui/IconListView');
 		
 	//create component instance
@@ -18,7 +19,8 @@ function ApplicationWindow() {
 			views: [
 					new AllIconView ('#fff', '#000'),
 					new AllIconView ('#eee', '#800'),
-					new IconListView('#fff', '#333')
+					new IconListView('#fff', '#333'),
+					new IconButtonView('#fff', '#333')
 					],
 			pagingControlColor: '#333',
 			scrollingEnabled: true,
