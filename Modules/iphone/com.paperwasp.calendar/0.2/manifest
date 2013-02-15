@@ -1,0 +1,15 @@
+
+version: 0.2
+apiversion: 2
+description: A native calendar control to be used inside Titanium projects
+author: PaperWasp Media
+license: All rights reserved to PaperWasp Media
+copyright: Copyright (c) 2012 by PaperWasp Media
+
+
+# these should not be edited
+name: calendarmodule
+moduleid: com.paperwasp.calendar
+guid: d99d019e-14de-4583-a811-9747b12acd79
+platform: iphone
+minsdk: 1.8.1

@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Flying Views module, free edition
+author: Yury Bogom
+license: Commercial
+copyright: infinery, Inc.
+
+
+# these should not be edited
+name: fv
+moduleid: com.infinery.fv
+guid: ece8130f-344b-46be-81e7-0c2c68612d99
+platform: iphone
+minsdk: 1.7.5

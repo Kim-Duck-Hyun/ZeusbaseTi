@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Emityme
+license: Specify your license
+copyright: AppDesignVault
+
+
+# these should not be edited
+name: advappearancetoolkit
+moduleid: com.emityme.advappearance
+guid: b511b912-a6c5-4ed7-a546-118480a55345
+platform: iphone
+minsdk: 2.0.2.GA

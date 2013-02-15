@@ -1,0 +1,91 @@
+<h1>google_analytics Module</h1>
+<h2>Description</h2>
+<p>The Google Analytics for Mobile Apps SDK for iOS makes it easy to implement
+Google Analytics in an iOS-based applications. This document describes how to
+integrate the SDK with your apps.</p>
+<p>The Google Analytics for Mobile Apps SDKs provide an interface for tracking
+activity within mobile apps and reporting that activity to Google Analytics.
+For example you can use this SDK to calculate visits, session length, bounce
+rate and unique visitors. Tracking mobile applications has some structural
+variations from tracking website pages.</p>
+<h2>Accessing the google_analytics Module</h2>
+<p>To access this module from JavaScript, you would do the following:</p>
+<pre><code>var GoogleAnalytics = require("com.0x82.google.analytics");
+</code></pre>
+<p>The GoogleAnalytics variable is a reference to the Module object. <br />
+</p>
+<h2>Reference</h2>
+<p>The first thing you do is to configure the global Google Analytics module.
+You do that by setting the following properties:</p>
+<h3>GoogleAnalytics.accountID [string]</h3>
+<p>The tracking ID (a string that begins with "UA-"). Must not be <code>null</code> or empty.</p>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.accountID = "UA-2061857-2";
+</code></pre>
+<h3>GoogleAnalytics.debug [boolean]</h3>
+<p>If <code>true</code>, Google Analytics debug messages will be logged to output. This is
+useful for debugging calls to the Google Analytics SDK.</p>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.debug = true;
+</code></pre>
+<h3>GoogleAnalytics.optOut [boolean]</h3>
+<p>When this is <code>true</code>, no tracking information will be gathered; tracking calls
+will effectively become no-ops. When set to <code>true</code>, all tracking information
+that has not yet been submitted. The value of this flag will be persisted
+automatically by the SDK.  Developers can optionally use this flag to implement
+an opt-out setting in the app to allows users to opt out of Google Analytics
+tracking.</p>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.optOut = true;
+</code></pre>
+<h3>GoogleAnalytics.dispatchInterval [integer]</h3>
+<p>If this value is negative, tracking information must be sent manually by
+calling dispatch. If this value is zero, tracking information will
+automatically be sent as soon as possible (usually immediately if the device
+has Internet connectivity). If this value is positive, tracking information
+will be automatically dispatched every dispatchInterval seconds. Default value
+is 120.</p>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.dispatchInterval = 120;
+</code></pre>
+<h3>GoogleAnalytics.trackUncaughtExceptions [boolean]</h3>
+<p>When set to <code>true</code>, the SDK will record the currently registered uncaught
+exception handler, and then register an uncaught exception handler which tracks
+the exceptions that occurred using the default tracker.</p>
+<p>Example:</p>
+<pre><code>GoogleAnalytics.trackUncaughtExceptions = true;
+</code></pre>
+<h2>Creating a tracker</h2>
+<p>After setting the values before, you can create your tracker:</p>
+<h3>GoogleAnalytics.tracker</h3>
+<p>Returns a tracker associated with the specified tracking ID. The tracker can be
+used to send tracking data to Google Analytics.</p>
+<p>Example:</p>
+<pre><code>var Tracker = GoogleAnalytics.tracker;
+</code></pre>
+<p>For more information about what you can do with the Tracker, see the
+provided <a href="tracker.html">documentation</a>.</p>
+<h3>GoogleAnalytics.dispatch()</h3>
+<p>Forces the dispatcher to send pending information to Google, instead of waiting
+for <code>dispatchSeconds</code> seconds.</p>
+<h2>Additional info</h2>
+<p>Before you begin using the SDK, you must first create a free account at
+<code>www.google.com/analytics</code> and create a new website profile in that account using
+a fake but descriptive website URL (e.g. <code>http://mymobileapp.mywebsite.com</code>).
+Once you create the profile, write down or keep a copy of the web property ID
+that is generated for the newly-created profile.</p>
+<p>A Web property ID is also known as the UA number of your tracking code and
+looks like <code>UA-xxxxx-yy</code>, where the x's and y's indicate the unique numbers for
+your profile. You must indicate the web property ID you'd like to use when
+instantiating the tracking object. </p>
+<p>You must indicate to your users, either in the application itself or in your
+terms of service, that you reserve the right to anonymously track and report a
+user's activity inside of your app. Your use of the Google Analytics SDK is
+additionally governed by the Google Analytics Terms of Service, which you must
+agree to when signing up for an account.</p>
+<h2>Usage</h2>
+<p>Please see the examples/app.js for an example App.</p>
+<h2>Author</h2>
+<p>Rúben Fonseca, (C) 2011</p>
+<h2>License</h2>
+<p>MIT</p>

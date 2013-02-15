@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 0.1
+apiversion: 2
+description: Google Directions module provides simple routing functions using Google Directions API.
+author: Alexander Bauer
+license: This module is free for use in any app.
+copyright: Copyright (c) 2012 by codeWire
+
+
+# these should not be edited
+name: googledirections
+moduleid: de.codewire.google.directions
+guid: 051f293b-b28f-499f-b087-40d0fa8d0637
+platform: iphone
+minsdk: 1.8.2

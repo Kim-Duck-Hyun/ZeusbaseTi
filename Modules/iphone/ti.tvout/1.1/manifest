@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.1
+description: iOS TV Out Module 
+author: Jeff Haynie 
+license: Appcelerator Commercial License 
+copyright: Copyright (c) 2010-2011 by Appcelerator, Inc.
+
+
+# these should not be edited
+name: tvout
+moduleid: ti.tvout
+guid: 4a96f222-9aee-453c-82d5-a7cb38778b25
+platform: iphone
+minsdk: 1.6.0

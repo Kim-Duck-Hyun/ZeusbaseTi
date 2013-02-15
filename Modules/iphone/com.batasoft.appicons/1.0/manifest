@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+description: 254 vector-based, commonly used icons in one true-type font
+author: BataSoft Inc.
+license: CC BY 3.0 (http://creativecommons.org/licenses/by-sa/3.0/)
+copyright: Copyright(c) 2012 by BataSoft Inc.
+
+
+# these should not be edited
+name: Font-Awesome App Icons
+moduleid: com.batasoft.appicons
+guid: c3caf1ff-684a-43dd-bb56-d55117faecc9
+platform: android
+minsdk: 2.1.3.GA

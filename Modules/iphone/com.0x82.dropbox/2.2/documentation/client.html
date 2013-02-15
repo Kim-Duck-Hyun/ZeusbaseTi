@@ -1,0 +1,178 @@
+<h1>com.0x82.dropbox.Client</h1>
+<h2>Description</h2>
+<p>A dropbox object that represents a dropbox client with the server.</p>
+<h2>Reference</h2>
+<p>All callbacks are optional. You implement them if you want to.</p>
+<h3>dropbox.client.loadAccountInfo({...})</h3>
+<p>Gets the current account information and passes it to the success callback. It accepts a dictionary with the following options:</p>
+<ul>
+<li>
+<p>success[callback]: a function with a dictionary event with the following properties:</p>
+<blockquote>
+<p>country[string]<br />
+displayName[string]<br />
+userId[string]<br />
+referralLink[string]<br />
+quota[object]<br /></p>
+<blockquote>
+<p>normal[long]<br />
+shared[long]<br />
+quota[long]<br /></p>
+</blockquote>
+</blockquote>
+</li>
+<li>
+<p>error[callback]: called if the method returns an error</p>
+</li>
+</ul>
+<h3>dropbox.client.loadMetadata({...})</h3>
+<p>Gets the metadata for a file. It accepts a dictionary with the following options:</p>
+<ul>
+<li>path[string]: the path you want to get metadata<br /></li>
+<li>hash[string]: OPTIONAL. if you are making sucessive requests on the same
+  path, you should use the event.hash returned on the success callback. this in
+  turn will make the server fire the 'unchanged' callback if the metadata did
+  not change </li>
+<li>success[callback]: the event object has the following
+  properties<blockquote>
+<p>hash[string]<br />
+thumbnailExists[bool]<br />
+totalBytes[long]<br />
+lastModifiedDate[date]<br />
+path[string]<br />
+isDirectory[bool]<br />
+hash[string]<br />
+humanReadableSize[string]<br />
+root[string]<br />
+icon[string]<br />
+revision[long]<br />
+isDeleted[bool]<br />
+contents[object]: an array of metadata for the directory<br /></p>
+</blockquote>
+</li>
+<li>unchanged[callback]: called if you supply a hash parameter and the metadata didn't change at that path</li>
+<li>error[callback]: called if the method returns an error (does the path exists?)</li>
+</ul>
+<h3>dropbox.client.loadThumbnail({...})</h3>
+<p>Tries to get a thumbnail for the path. It accepts a dictionary with the following options:</p>
+<ul>
+<li>path[string]: the path you want to get the thumbnail<br /></li>
+<li>size[string]: OPTIONAL specify the image size. Default = 'small'<br /></li>
+<li>
+<p>success[callback]: the thumbnail blob will come on the 'thumbnail' property
+  on the event. You can assign it to a ImageView like this:</p>
+<p>var imageView = Ti.UI.createImageView({image:e.thumbnail});</p>
+</li>
+<li>
+<p>error[callback]: called if the method returns an error</p>
+</li>
+</ul>
+<p><em>CAUTION</em>: the size <code>iphone_best</code> does not exist anymore, so it can't be used.</p>
+<h3>dropbox.client.loadFile({...})</h3>
+<p>Tries to get the file from a path. It accepts a dictionary with the following options:</p>
+<ul>
+<li>path[string]: the path from the file you want to get<br /></li>
+<li>
+<p>success[callback]: the file blob will come on the 'file' property on the
+  event. You can assign it to a ImageView like this:</p>
+<p>var imageView = Ti.UI.createImageView({image:e.file});</p>
+</li>
+<li>
+<p>error[callback]: called if the method returns an error</p>
+</li>
+</ul>
+<h3>dropbox.client.cancelFileLoad(path)</h3>
+<p>Cancels the download of the file at the given path.</p>
+<h3>dropbox.client.createFolder({...})</h3>
+<p>Tries to create a new directory. It accepts a dictionary with the following options:</p>
+<ul>
+<li>path[string]: the path to the new directory<br /></li>
+<li>success[callback]: called if the operation succeeded<br /></li>
+<li>error[callback]: called if the operation failed (does the path already exists?)</li>
+</ul>
+<h3>dropbox.client.deletePath({...})</h3>
+<p>Deletes a path from Dropbox. It accepts a dictionary with the following options:</p>
+<ul>
+<li>path[string]: the path to delete<br /></li>
+<li>success[callback]: called if the operation succeeded<br /></li>
+<li>error[callback]: called if the operation failed (does the path exists?)</li>
+</ul>
+<h3>dropbox.client.uploadFile({...})</h3>
+<p>Uploads a new file to Dropbox. It accepts a dictionary with the following options:</p>
+<ul>
+<li>path[string]: the path where the file will be uplaoded<br /></li>
+<li>file[string]: the path of the file you want to upload<br /></li>
+<li>parentRev[string]: [optional] the previous revision of the file. This value can be obtained
+  using the .getMetadata method, under the key <code>rev</code></li>
+<li>overwrite[boolean]: [optional] if <code>true</code>, the upload doesn't create a new file
+  if the target path already exists. The default value is <code>false</code>, so if the
+  target file already exists, a new file is created, and never overwritten. </li>
+<li>success[callback]: called if the upload succeeds<br /></li>
+<li>error[callback]: called if the upload fails<br /></li>
+<li>progress[callback]: called during the upload. It has a 'progress' event
+  property with the progress of the upload, ranging from 0 to 1</li>
+</ul>
+<h3>dropbox.client.copyPath({...})</h3>
+<p>Copies a path on Dropbox. It accepts a dictionary with the following options:</p>
+<ul>
+<li>fromPath[string]: the origin path<br /></li>
+<li>fromCopyRef[string]: the reference obtained from calling createCopyRef()<br /></li>
+<li>toPath[string]: the destination path<br /></li>
+<li>success[callback]: called when it's done<br /></li>
+<li>error[callback]: called if there's an error</li>
+</ul>
+<p><em>PLEASE NOTE</em>, you need to specify <em>one</em> of these: fromPath or fromCopyRef</p>
+<h3>dropbox.client.movePath({...})</h3>
+<p>Moves a path on Dropbox. It accepts a dictionary with the following options:</p>
+<ul>
+<li>fromPath[string]: the origin path<br /></li>
+<li>toPath[string]: the destination path<br /></li>
+<li>success[callback]: called when it's done<br /></li>
+<li>error[callback]: called if there's an error</li>
+</ul>
+<h3>dropbox.client.sharePath({...})</h3>
+<p>Generates an URL link for sharing the specified directory or file. It accepts a dictionary:</p>
+<ul>
+<li>path[string]: the Dropbox path to share</li>
+<li>success[callback]: called if the url is retrieved. It contains one key:<blockquote>
+<ul>
+<li>url: the URL to share the path</li>
+</ul>
+</blockquote>
+</li>
+<li>error[callback]: called if the url can't be retrieved</li>
+</ul>
+<h3>dropbox.client.getStreamableURL({...})</h3>
+<p>Generates an URL link for directly sharing a file, without touching the Dropbox frontend. Usefull
+for using the link into an imageview or a video player. It accepts a dictionary:</p>
+<ul>
+<li>path[string]: the Dropbox path to share</li>
+<li>success[callback]: called if the url is retrieved. It contains one key:<blockquote>
+<ul>
+<li>url: the direct URL to the shared path</li>
+</ul>
+</blockquote>
+</li>
+<li>error[callback]: called if the url can't be retrived</li>
+</ul>
+<h3>dropbox.client.createCopyRef({...})</h3>
+<p>Creates and returns a copy_ref to a file. This reference string can be used to
+copy that file to another user's Dropbox. It accepts a dictionary:</p>
+<ul>
+<li>path[string]: the Dropbox path to get the copy_ref</li>
+<li>success[callback]: called if the API sends a copy_ref. It contains only one key:<blockquote>
+<ul>
+<li>copyRef[string]: the copyRef reference you can then use on copyPath.</li>
+</ul>
+</blockquote>
+</li>
+<li>error[callback]: called if the ref can't be obtained</li>
+</ul>
+<h3>dropbox.client.searchPath({...})</h3>
+<p>Searches a directory for entries matching the query. It accepts a dictionary:</p>
+<ul>
+<li>path[string]: the Dropbox directory to search in.</li>
+<li>query[string]: the query to search for (minimum 3 charatcters).</li>
+<li>success[callback]: called with the search results on the <code>results</code> key</li>
+<li>error[callback]: called if the search fails</li>
+</ul>

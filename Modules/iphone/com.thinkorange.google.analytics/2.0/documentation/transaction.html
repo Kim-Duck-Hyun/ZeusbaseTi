@@ -1,0 +1,57 @@
+<h1>google_analytics Module</h1>
+<h2>Transaction</h2>
+<p>A simple class to hold transaction data. You can obtain a reference to a 
+transaction object using this:</p>
+<pre><code>var Transaction = GoogleAnalytics.createTransaction({
+  transactionID: '1'
+});
+</code></pre>
+<p>The required fields are:</p>
+<ul>
+<li><em>transactionID</em>: The transaction ID. Required </li>
+</ul>
+<h2>Properties</h2>
+<h3>Transaction.affiliation</h3>
+<p>The transaction affiliation.</p>
+<h3>Transaction.revenueMicros | Transaction.setRevenueMicros(int)</h3>
+<p>Revenue in micros (millionths of a currency unit). Note that this must be set
+manually because it is not updated when items are added.</p>
+<h3>Transaction.taxMicros | Transaction.setTaxMicros(int)</h3>
+<p>Tax in micros (millionths of a currency unit). Note that this must be set
+manually because it is not updated when items are added.</p>
+<h3>Transaction.shippingMicros | Transaction.setShippingMicros(int)</h3>
+<p>Shipping cost in micros (millionths of a currency unit). Note that this must be
+set manually because it is not updated when items are added.</p>
+<h2>Methods</h2>
+<h3>Transaction.addItem({...})</h3>
+<p>Add an item to the transaction. If an item with the same SKU already exists in
+the transaction, that item will be replaced with this one. It accepts the
+following parameters:</p>
+<ul>
+<li><em>productCode</em> [required]: The item product code, required.</li>
+<li><em>productName</em> [required]: The item product name</li>
+<li><em>productCategory</em> [required]: The item product category</li>
+<li><em>priceMicros</em> [required]: The item price, in micros (millionths of a currency unit)</li>
+<li><em>quantity</em> [required]: The item quantity, required.</li>
+</ul>
+<h2>Submitting a transaction</h2>
+<p>Example:</p>
+<pre><code>var Tracker = ...
+var Transaction = GoogleAnalytics.createTransaction({
+  transactionID: '1',
+  affiliation: 'In-App Store',
+  taxMicros: 0.17 * 1000000,
+  shippingMicros: 0,
+  revenueMicros: 2.16 * 1000000
+});
+
+Transaction.addItem({
+  productCode: 'SKU_789',
+  productName: "Level Pack: Space",
+  productCategory: "Game expansions",
+  priceMicros: 1.99 * 1000000,
+  quantity: 1
+});
+
+Tracker.trackTransaction(Transaction);
+</code></pre>

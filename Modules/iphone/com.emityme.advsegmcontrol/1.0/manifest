@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: My module
+author: Emityme
+license: Specify your license
+copyright: Copyright (c) 2012 by Your Company
+
+
+# these should not be edited
+name: advsegmentedcontrol
+moduleid: com.emityme.advsegmcontrol
+guid: 28138877-2c3b-4097-a021-b267518f752b
+platform: iphone
+minsdk: 2.0.2.GA

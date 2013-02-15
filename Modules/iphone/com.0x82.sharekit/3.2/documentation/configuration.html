@@ -1,0 +1,176 @@
+<h1>com.0x82.sharekit Configuration</h1>
+<h2>Description</h2>
+<p>To use the ShareKit module you must configure it with the credentials of
+the services you want to use.</p>
+<p>If, for example, your app only shares URLs then you probably won't need image
+services like Flickr.  In these cases it is safe to leave an API key blank.</p>
+<p>However, it is STRONGLY recommended that you do your best to support all
+services for the types of sharing you support.  The core principle behind
+ShareKit is to leave the service choices up to the user.  Thus, you should not
+remove any services, leaving that decision up to the user.</p>
+<h3>sharekit.configure({ ... })</h3>
+<p>This method accepts a dictionary. </p>
+<h4>General Settings</h4>
+<ul>
+<li>"my_app_name"[string] REQUIRED</li>
+<li>
+<p>"my_app_url" [string] REQUIRED</p>
+</li>
+<li>
+<p>"share_menu_alphabetical_order"[boolean]: <em>OPTIONAL</em>. Setting this to true will show the list of share services in Alphabetical Order. Setting to false with follow the implicit order</p>
+</li>
+<li>"shared_with_signature":[boolean] <em>OPTIONAL</em>. Append 'Shared With ' signature to email (and related forms)</li>
+</ul>
+<h4>Twitter</h4>
+<p>Important Twitter settings to get right:</p>
+<h5>Differences between OAuth and xAuth</h5>
+<p>There are two types of authentication provided for Twitter, OAuth and xAuth.
+OAuth is the default and will present a web view to log the user in.  xAuth
+presents a native entry form but requires Twitter to add xAuth to your app (you
+have to request it from them).<br />
+</p>
+<p>If your app has been approved for xAuth, set <code>twitter_consumer_use_xauth</code> to 1.</p>
+<h5>Callback URL (important to get right for OAuth users)</h5>
+<ol>
+<li>Open your application settings at http://dev.twitter.com/apps/</li>
+<li>'Application Type' should be set to BROWSER (not client)</li>
+<li>'Callback URL' should match whatever you enter in twitter_callback_url.  The
+   callback url doesn't have to be an actual existing url.  The user will never
+   get to it because ShareKit intercepts it before the user is redirected.  It
+   just needs to match.</li>
+</ol>
+<p>Options for Twitter:</p>
+<ul>
+<li>"twitter_consumer_key"[string]</li>
+<li>"twitter_consumer_secret"[string]</li>
+<li>"twitter_callback_url"[string]</li>
+<li>"twitter_use_xauth"[boolean] OPTIONAL</li>
+</ul>
+<h4>Bit.ly</h4>
+<p>Bit.ly (for shortening URLs on Twitter) - <a href="">http://bit.ly/account/register</a> -
+after signup: <a href="">http://bit.ly/a/your_api_key</a>.</p>
+<p>Please note that this will only be used when you share links on Twitter, on devices
+with iOS less or equal to 4. iOS 5 devices will use the internal Twitter framework
+that automatically shortens any url attached.</p>
+<ul>
+<li>"bit_ly_login"[string]</li>
+<li>"bit_ly_key"[string]</li>
+</ul>
+<h4>Facebook</h4>
+<p>http://www.facebook.com/developers</p>
+<p><code>facebook_key</code> is the Application ID provided by Facebook <code>facebook_local_key</code>
+is used if you need to differentiate between several iOS apps running against a
+single Facebook app. Useful, if you have full and lite versions of the same
+app, and wish sharing from both will appear on facebook as sharing from one
+main app. </p>
+<p><strong>ALSO REQUIRED</strong>: Please follow the instructions <a href="http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.Facebook-module">on the Facebook module</a> to add support for Facebook on your Titanium app. Specifically, <strong>don't forget</strong> to add to your <code>tiapp.xml</code> file: <code>&lt;property name="ti.facebook.appid"&gt;YOUR APP ID&lt;/property&gt;</code>.</p>
+<ul>
+<li>"facebook_key"[string]</li>
+<li>"facebook_local_key"[string]</li>
+</ul>
+<p>Also, <strong>if you're using a custo Info.plist file</strong> (for instance, you're using
+custom fonts) you have to follow the following instructions to get things working:</p>
+<p><a href="http://developer.appcelerator.com/question/137876/how-to-use-facebook-single-sign-on">See the accepted answer</a></p>
+<h4>Read It Later</h4>
+<p><a href="">http://readitlaterlist.com/api/signup/</a></p>
+<ul>
+<li>"readitlater_key"[string]</li>
+</ul>
+<h4>Vkontakte</h4>
+<ul>
+<li>"vknotakte_app_id"[string]: is the Application ID provided by Vkontakte</li>
+</ul>
+<h4>Evernote</h4>
+<p>Evernote - <a href="">http://www.evernote.com/about/developer/api/</a></p>
+<p>You need to set to sandbox until you get approved by evernote.</p>
+<p>Example:</p>
+<pre><code>// Sandbox
+"evernote_user_store_url" --&gt; "https://sandbox.evernote.com/edam/user"
+"evernote_net_store_url"  --&gt; "http://sandbox.evernote.com/edam/note/"
+
+// Production
+"evernote_user_store_url" --&gt; "https://www.evernote.com/edam/user"
+"evernote_net_store_url"  --&gt; "http://www.evernote.com/edam/note/"
+</code></pre>
+<ul>
+<li>"evernote_user_store_url"[string]</li>
+<li>"evernote_net_store_url"[string]</li>
+<li>"evernote_consumer_key"[string]</li>
+<li>"evernote_secret"[string]</li>
+</ul>
+<h4>Flickr</h4>
+<p><a href="">http://www.flickr.com/services/apps/create/</a></p>
+<p>One needs to setup the flickr app as a "web service" on the flickr
+authentication flow settings, and enter in your app's custom callback URL
+scheme. Make sure you define and create the same URL scheme in your apps
+info.plist. It can be as simple as yourapp://flickr</p>
+<ul>
+<li>"flickr_consumer_key"[string]</li>
+<li>"flickr_secret_key"[string]</li>
+<li>"flickr_callback_url"[string]</li>
+</ul>
+<h4>LinkedIn</h4>
+<p><a href="">https://developer.linkedin.com/documents/authentication</a></p>
+<ul>
+<li>"linked_in_consumer_key"[string]</li>
+<li>"linked_in_secret"[string]</li>
+<li>"linked_in_callback_url"[string]</li>
+</ul>
+<h4>Foursquare</h4>
+<p><a href="">https://developer.foursquare.com</a></p>
+<ul>
+<li>"foursquare_client_id"[string]</li>
+<li>"foursquare_redirect_uri"[string]</li>
+</ul>
+<h4>Sharers.plist</h4>
+<p>In order to customize the list of sharers to present to the user, you can
+copy the <code>assets/Sharers.plist</code> to your project Resources file. Then you
+should edit it with Xcode and leave only the services you want to support.</p>
+<p>To make this module load your file (and not the builtin one), you should
+specifiy the following option on the configuration object:</p>
+<ul>
+<li>"sharers_plist_name"[string]</li>
+</ul>
+<p>Example:</p>
+<pre><code>// Assuming the file is on the Resources directory
+
+sharekit.configure({
+  ...
+  sharers_plist_name: '/Sharers.plist',
+  ...
+})
+</code></pre>
+<p>Again, the old method on version &lt; 2.0 does not work anymore.</p>
+<h4>Toolbars</h4>
+<p>Optional. See: <a href="">http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIKitDataTypesReference/Reference/reference.html#//apple_ref/c/econst/UIBarStyleDefault</a></p>
+<ul>
+<li>"bar_style"[string] OPTIONAL, default <code>UIBarStyleDefault</code></li>
+</ul>
+<h4>Forms</h4>
+<p>Optional. Value between 0-255, set all to -1 to default</p>
+<ul>
+<li>"form_font_color_red"[int]</li>
+<li>"form_font_color_green"[int]</li>
+<li>"form_font_color_blue"[int]</li>
+<li>"form_bg_color_red"[int]</li>
+<li>"form_bg_color_green"[int]</li>
+<li>"form_bg_color_blue"[int]</li>
+</ul>
+<h4>iPad modal settings</h4>
+<p>Optional. See: <a href="">http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalPresentationStyle</a></p>
+<ul>
+<li>"ipad_modal_presentation_style"[string] Optional. Default: <code>UIModalPresentationFormSheet</code></li>
+</ul>
+<p>Optional. See: <a href="">http://developer.apple.com/iphone/library/documentation/UIKit/Reference/UIViewController_Class/Reference/Reference.html#//apple_ref/occ/instp/UIViewController/modalTransitionStyle</a></p>
+<ul>
+<li>"ipad_modal_transition_style"[string] Optional. Default: <code>UIModalTransitionStyleCoverVertical</code></li>
+</ul>
+<h4>Misc</h4>
+<ul>
+<li>"allow_offline"[boolean]: wheter the app should store the shares when offline,
+  and try to retransmit them when online</li>
+<li>"allow_auto_share"[boolean]: allows some sharers to auto share with no 
+  confirmation dialog</li>
+<li>"hide_more_button"[boolean]: if set to <code>true</code>, hides the "More" button on the
+  action sheet. Default is <code>false</code></li>
+</ul>

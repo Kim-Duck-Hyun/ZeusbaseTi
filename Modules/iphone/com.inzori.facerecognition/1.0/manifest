@@ -1,0 +1,18 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+apiversion: 2
+description: Face recognition module
+author: Inzori
+license: Inzori Commercial License
+copyright: Inzori © 2012
+
+
+# these should not be edited
+name: facerecognitionmodule
+moduleid: com.inzori.facerecognition
+guid: 0b8b19e3-0aeb-4da5-b40a-5cfc2418c39c
+platform: iphone
+minsdk: 1.8.2

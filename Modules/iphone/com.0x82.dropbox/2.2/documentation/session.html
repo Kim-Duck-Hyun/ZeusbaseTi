@@ -1,0 +1,24 @@
+<h1>com.0x82.dropbox.Session</h1>
+<h2>Description</h2>
+<p>A dropbox object that represents a dropbox session with the server.</p>
+<h2>Reference</h2>
+<h3>dropbox.session.isLinked()</h3>
+<p>Returns a bool (true, false) if the current session is linked to the Dropbox
+API. If it's not, you should call the <a href="">link</a> method, to
+authenticate the user.</p>
+<h3>dropbox.session.unlink()</h3>
+<p>Unlinkes the current session from this device.</p>
+<h3>dropbox.session.link({...})</h3>
+<p>Shows a modal dropbox authentication window on both iPhone and iPad.</p>
+<p>Takes one argument, a dictionary containing the following properties:</p>
+<ul>
+<li>
+<p>success[callback]: a callback which is called if the authentication succeeds. The callback method takes one argument containing the following properties:</p>
+<blockquote>
+<p>client[object]: a <a href="client.html">dropbox.Client</a> instance you should use to make your requests from this momment on</p>
+</blockquote>
+</li>
+<li>
+<p>cancel[callback]: a callback which is called if the user cancels the authentication / signup process. There is no need to close the modal window.</p>
+</li>
+</ul>

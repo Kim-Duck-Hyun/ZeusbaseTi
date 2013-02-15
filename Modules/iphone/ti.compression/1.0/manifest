@@ -1,0 +1,17 @@
+#
+# this is your module manifest and used by Titanium
+# during compilation, packaging, distribution, etc.
+#
+version: 1.0
+description: Lets you zip and unzip files.
+author: Appcelerator
+license: Appcelerator Commercial License
+copyright: Copyright (c) 2010-2011 by Appcelerator, Inc.
+
+
+# these should not be edited
+name: compression
+moduleid: ti.compression
+guid: c129f5f7-ace8-4cca-be47-b226f8b29f78
+platform: iphone
+minsdk: 1.6.0
