@@ -1,0 +1,1 @@
+/Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/modules/sidebar/sidebar.js

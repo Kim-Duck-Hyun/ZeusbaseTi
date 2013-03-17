@@ -1,0 +1,1 @@
+/Users/hyokosdeveloper/Workspaces/Titanium/Zeus.eCommerce/Resources/utils/shortcuts.js

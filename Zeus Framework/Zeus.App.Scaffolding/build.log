@@ -1,0 +1,35 @@
+Logfile initialized
+[INFO] logfile = /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/build.log
+[DEBUG] /Users/hyokosdeveloper/Library/Application Support/Titanium/mobilesdk/osx/2.0.2.GA/android/builder.py simulator Zeus.App /Server/SDK/Frameworks/Android/android-sdk-macosx /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding com.zeusframework.AppTemplate 7 WVGA854 /127.0.0.1:51542
+[INFO] Building Zeus.App for Android ... one moment
+[INFO] Titanium SDK version: 2.0.2 (05/30/12 10:21 2ff31a3)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 0 seconds)
+[DEBUG] waited 0.014950 seconds on emulator to get ready
+[DEBUG] com.zeusframework.AppTemplate installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[TRACE] COPYING CREATED FILE: /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/images/chrome.png => /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/build/android/bin/assets/Resources/images/chrome.png
+[TRACE] COPYING MODIFIED FILE: /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/lib/app.js => /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/build/android/bin/assets/Resources/lib/app.js
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/Zeus.App.Scaffolding/Resources/android/images/res-notlong-port-mdpi/default.png
+[INFO] Waiting for SDCard to become available..
+[INFO] Re-launching application ... Zeus.App
+[INFO] Launching application ... Zeus.App
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zeusframework.AppTemplate/.ZeusAppActivity }
+
+[INFO] Forwarding host port 51542 to device for debugging.
+[DEBUG] signal caught: 15
+[DEBUG] calling emulator kill on 25221

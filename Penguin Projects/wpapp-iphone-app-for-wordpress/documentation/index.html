@@ -1,0 +1,549 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>WpApp: iPhone app for WordPress</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		.codex { font-family: "monaco", "courier"; font-weight:bold; color: #050; }
+		.uidetail {font-size:16px;text-align:center}
+		pre {background:#eee; padding:20px;font-family: "monaco", "courier";}
+    .note {background:#ccc; padding:10px;}
+    .comment {background:#aaa;}
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">&ldquo;WpApp: iPhone app for WordPress&rdquo; Documentation by &ldquo;dodyrw&rdquo; v2.0</h3>
+		
+		<hr>
+		
+		<h1 class="center">&ldquo;WpApp: iPhone app for WordPress&rdquo;</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 02/11/2012<br>
+					By: dodyrw<br>
+					Email: <a href="mailto:info@dodyrw.com">info@dodyrw.com</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing WpApp. If you have any questions that are beyond the scope of this help file, please feel free to email via my user page contact form <a href="http://www.codecanyon.net/user/dodyrw">here</a>. Thanks so much!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Introduction</a></li>
+			<li><a href="#features">Features</a></li>
+			<li><a href="#ui">User Interfaces</a></li>
+            <li><a href="#wpplugin">WpApp WordPress plugin installation</a></li>
+			<li><a href="#admob">Admob module installation</a></li>
+			<li><a href="#setup">Setup and customization</a></li>
+			<li><a href="#skin">Customizing skins</a> (<a href="skin.html">available skins</a>)</li>
+      <li><a href="#i18n">i18n localization</a></li>
+      <li><a href="#links">Useful links</a></li>
+      <li><a href="#credits">Sources and credits</a></li>
+
+
+			
+		</ol>
+		
+		<hr>
+		
+		<h3 id="intro"><strong>A) Introduction</strong> - <a href="#toc">top</a></h3>
+
+		<p>WpApp is a Titanium template that enable you to create an iOS app for WordPress blog. There are some benefits from having a mobile app for blog site. It can increase the visitor loyalty, expanding market reader, and also to make more money by using <a href="http://www.admob.com/" target="_blank">admob</a>.</p>
+
+		<p>If you are not familiar with the Titanium platform then refer to the <a href="http://wiki.appcelerator.org/display/guides/Getting+Started+with+Titanium" target="_blank">Getting Started with Titanium</a> guide.</p>
+
+		<p>In order to fetch blog post data, WpApp require a WpApp WordPress plugin to be installed. The plugin is provided in this package in <span class="codex">/wpplugin</span> folder.</p>
+
+		<p>WpApp is tested with Titanium Mobile SDK 1.7.5, 1.8.0.1 and XCode 4.2. Tested on iPhone simulator 5 and on device with iOS 4.2 and 5.0.</p>
+
+
+		<h3 id="features"><strong>B) Features</strong> - <a href="#toc">top</a></h3>
+
+		<ul>
+            <li><strong>Push notification for each time new post published (v2.0)</strong></li>
+            <li><strong>More social sites: twitter improved, youtube, facebook and flickr (v2.0)</strong></li>
+            <li>Twitter posts (v1.1)</li>
+            <li>Pages List (v1.1)</li>
+			<li>Admob module</li>
+			<li>Database cache</li>
+			<li>i18n localization</li>
+			<li>Unlimited categories</li>
+			<li>Pull to refresh</li>
+            <li>Share by email and facebook</li>
+			<li>Loading indicator</li>
+			<li>20 color skins</li>
+			<li>Reset data</li>
+			<li>Automatically finding image from blog post</li>
+			<li>WordPress plugin</li>
+			<li>Easy to customize</li>
+		</ul>	
+
+
+
+		<h3 id="ui"><strong>C) User Interfaces</strong> - <a href="#toc">top</a></h3>
+
+		<p>Titanium will run <span class="codex">app.js</span> by default. It will load configuration (<span class="codex">config.js</span>), skin (<span class="codex">skin/</span>), libraries (<span class="codex">lib/</span>) and user interface (<span class="codex">ui/</span>) files.</p>
+
+		<p>Here are the available user interfaces.</p>
+	
+		<style type="text/css" media="screen">
+			#main_ss img {
+				width:380px;
+				margin-bottom:40px;
+				border: 1px #ccc solid;
+			}
+		</style>
+		<table id="main_ss">
+			<tr>
+				<td>
+					<p class="uidetail"><strong>Recent News</strong> (<span class="codex">recent.js</span>)</p>
+					<img src="assets/images/recentpost.png">
+				</td>
+				<td>
+					<p class="uidetail"><strong>Category Dashboard</strong> (<span class="codex">categ.js</span>)</p>
+					<img src="assets/images/categorydashboard.png">
+				</td>
+			</tr>
+			<tr>
+				<td>
+					<p class="uidetail"><strong>Category Posts</strong> (<span class="codex">list.js</span>)</p>
+					<img src="assets/images/categorypost.png">
+				</td>
+				<td>
+					<p class="uidetail"><strong>Detail Blog Post</strong> (<span class="codex">post.js</span>)</p>
+					<img src="assets/images/detailpost.png">
+				</td>
+			</tr>
+			<tr>
+				<td>
+				    <p class="uidetail"><strong>Pages</strong> (<span class="codex">page.js</span>)</p>
+                    <img src="assets/images/pages.png">					
+				</td>
+				<td>
+                    <p class="uidetail"><strong>Twitter</strong> (<span class="codex">twitter.js</span>)</p>
+                    <img src="assets/images/twitter1.png">				    
+				</td>
+			</tr>
+            <tr>
+                <td>
+                    <p class="uidetail"><strong>More</strong></p>
+                    <img src="assets/images/more.png">
+                </td>
+                <td>                
+                    <p class="uidetail"><strong>Facebook</strong></p>
+                    <img src="assets/images/facebook.png">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="uidetail"><strong>Twitter</strong></p>
+                    <img src="assets/images/twitter2.png">
+                </td>
+                <td>                
+                    <p class="uidetail"><strong>Youtube</strong></p>
+                    <img src="assets/images/youtube.png">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <p class="uidetail"><strong>Flickr</strong></p>
+                    <img src="assets/images/flickr.png">
+                </td>
+                <td>                
+                    <p class="uidetail"><strong>Push Notification</strong></p>
+                    <img src="assets/images/push.png">
+                </td>
+            </tr>
+		</table>
+
+	
+    <h3 id="wpplugin"><strong>D) WpApp WordPress plugin installation</strong> - <a href="#toc">top</a></h3>
+
+    <p>WpApp contains a WordPress plugin that must be installed in your blog. This plugin serve as data provider for our apps. To install it, upload <span class="codex">wpapp.zip</span> (under folder <span class="codex">wpplugin</span> in this package) with WordPress admin panel, just like to install any other WordPress plugins.</p>
+
+    <p>After the plugin activated, there will be a new admin menu called <span class="codex">WPAPP</span> under <span class="codex">Settings</span> menu. In this page, you need to set the API KEY that will provide a secure way to access WordPress data.</p>
+
+	<p>The next two options are required to enable push notification with Urban Airship. Please read the following blog post to setup push notification.</p>
+
+	<ul>
+		<li><a href="http://www.dodyrw.com/how-to-generate-pkcs12-file-for-apple-push-notification/">Enable APN and generate .p12 file</a>.</li>
+		<li><a href="http://www.dodyrw.com/how-to-setup-apple-push-notification-with-urban-airship/">Setup Urban Airship</a></li>
+	</ul>
+
+    <p><strong>Tips:</strong> You may want to use hash generator tool like MD5 has generator to generate more secure string combination.</p>
+
+    <p><strong>Upgrade from 1.x:</strong> Just replace the old files (all wpapp plugin folder) with the new one.</p>
+
+    <img src="assets/images/wpplugin.png" style="border:1px solid #333; margin-bottom:30px">
+
+
+
+		<h3 id="admob"><strong>E) Admob module installation</strong> - <a href="#toc">top</a></h3>
+		
+		<p>WpApp require official Titanium Admob module. You can download it in <a href="https://marketplace.appcelerator.com/apps/795" target="_blank">Titanium Marketplace</a>.</p>
+		
+		<p>Extract the zip file, if you are using Snow Leopard, then copy <span class="codex">ti.admob</span> folder to <span class="codex">[HD root folder]/Library/Application Support/Titanium/modules/iphone</span>. Please do not mistaken it with similar folder under user account. </p>
+
+		<p>If you are using Lion, copy <span class="codex">ti.admob</span> folder to <span class="codex">[User Folder]/Library/Application Support/Titanium/modules/iphone</span></p>
+
+		<p>If it is your first time to install Titanium module, you may need to create <span class="codex">iphone</span> folder manually.</p>
+
+		<img src="assets/images/admobfolder.png">
+
+		<p>Next step, after creating a new project, edit <span class="codex">tiapp.xml</span>. In the bottom section, replace</p>
+
+		<pre>
+&lt;modules/>
+		</pre>
+
+		<p>with</p>
+
+		<pre>
+&lt;modules>
+	&lt;module version="1.1">ti.admob&lt;/module>
+&lt;/modules>
+		</pre>
+
+		<p class="note">After installing new module, <strong>you need to force rebuild</strong>. Otherwise it will return error message ti.admob module not found. In order to do this, remove or rename <span class="codex">build/</span> folder under project folder. Or with <span class="codex">Titanium Studio > Project > Clean</span>.</p>
+
+
+		<h3 id="setup"><strong>F) Setup and customization</strong> - <a href="#toc">top</a></h3>
+		
+		<ol>
+			<li>
+				Create a new Titanium project, have <span class="codex">tiapp.xml</span> modified as above to add admob module.
+			</li>
+			<li>
+				Edit <span class="codex">config.php</span>.
+
+				<pre>
+var config = {
+
+  <span class="comment">/**************** app setting ****************/</span>
+
+  <span class="comment">// wordpress url</span>
+  "BLOG_URL"            : "http://www.domain.tld/wordpress/",
+
+  <span class="comment">// webmaster email</span>
+  "WEBMASTER_EMAIL"     : "webmaster@domain.tld",
+
+  <span class="comment">// json data feed option</span>
+  "JSON_POST_COUNT"     : "20",
+  "JSON_API_KEY"        : "123456",
+
+  <span class="comment">// twitter</span>
+  "TWITTER_ACCOUNT"     : "envatowebdev",
+  "FACEBOOK_URL"        : 'http://m.facebook.com/pages/nicecoder/117973358230454',
+  "YOUTUBE_URL"         : 'http://m.youtube.com/profile?user=dodyrwzzz',
+  "FLICKR_URL"          : 'http://m.flickr.com/photos/58709576@N08',
+
+
+  <span class="comment">/**************** optional ****************/</span>
+
+  <span class="comment">// admob</span>
+  "ADMOB_PUBLISHER_ID"  : "xxxxxxxxxxxx",
+  "ADMOB_BGCOLOR"       : "#fff",
+  "ADMOB_GENDER"        : "",
+  "ADMOB_KEYWORD"       : "",
+  "ADMOB_TESTING"       : "true",  <span class="comment">// true or false</span>
+
+  <span class="comment">// urban airship (push notification service)</span>
+  "URBAN_AIRSHIP_APP_KEY"       : 'xxxxxxxxxxxx',
+  "URBAN_AIRSHIP_MASTER_SECRET" : 'xxxxxxxxxxxx',
+
+  "FIX_IMG_POST"        : "1",
+  "FORCE_RELOAD_TIME"   : "1800 seconds", <span class="comment">// do not refresh automatically during this time</span>
+
+  <span class="comment">// blog post tableview</span>
+  "DEFAULT_IMAGE"       : "imgs/default.png",
+
+  <span class="comment">// pages tableview</span>
+  "DEFAULT_PAGES_IMAGE"  : 'imgs/pages/light_doc.png',
+
+  <span class="comment">// use only one skin, put comment on the other selections</span>
+  <span class="comment">// "SKIN"                : "blue",</span> 
+  <span class="comment">// "SKIN"                : "red",</span> 
+  <span class="comment">// "SKIN"                : "cloud",</span> 
+  "SKIN"                : "brown", 
+  <span class="comment">// "SKIN"                : "magen",</span> 
+  <span class="comment">// "SKIN"                : "orange",</span> 
+  <span class="comment">// "SKIN"                : "silver",</span> 
+  <span class="comment">// "SKIN"                : "green",</span> 
+  <span class="comment">// "SKIN"                : "silvercloud",</span> 
+  <span class="comment">// "SKIN"                : "blueblue",</span> 
+  <span class="comment">// "SKIN"                : "black",</span> 
+  <span class="comment">// "SKIN"                : "redlight",</span> 
+  <span class="comment">// "SKIN"                : "bluedark",</span> 
+  <span class="comment">// "SKIN"                : "magencyan",</span> 
+  <span class="comment">// "SKIN"                : "redblack",</span> 
+  <span class="comment">// "SKIN"                : "greenlight",</span> 
+  <span class="comment">// "SKIN"                : "orenjiblack",</span> 
+  <span class="comment">// "SKIN"                : "brownlight",</span> 
+  <span class="comment">// "SKIN"                : "bluenext",</span> 
+  <span class="comment">// "SKIN"                : "blacklight",</span> 
+
+  "DB_NAME"             : "WpAppDB"
+};
+			
+  			</pre>
+			</li>
+			<li>
+				Edit <span class="codex">categ_list.js</span>. Here you set the categories. You can add as many as you need. They will be appear in category dashboard.
+
+				<pre>
+var categ_list = {
+    "categs": [
+        {
+            "slug"    : "apartemen-akomodasi",
+            "label"   : "Apartments",
+            "icon_off": "imgs/categ/a_off.png", <span class="comment">// 72x90</span>
+            "icon_on" : "imgs/categ/a_on.png"
+        },
+        {
+            "slug"    : "hotel-akomodasi",
+            "label"   : "Hotels",
+            "icon_off": "imgs/categ/h_off.png",
+            "icon_on" : "imgs/categ/h_on.png"
+        }
+    ]
+};
+				</pre>
+
+				Where to get the category slug? Go to <span class="codex">WordPress admin panel > Posts > Categories</span>. Or navigate to:
+				<pre>
+http://[domain.tld]/wp-admin/edit-tags.php?taxonomy=category
+				</pre>
+				
+				<img src="assets/images/slug_categ.png" style="border:1px solid #333; margin-bottom:30px" />
+			</li>
+		    <li>
+		        Edit <span class="codex">pages_list.js</span>. In this file you can set the list of WordPress pages. There is no limit for the number of pages. You can add as many as you need.			        
+		        <pre>
+var pages_list = {
+    "pages": [
+        {
+            "slug"    : "sample-page",
+            "label"   : "Sample page",
+            "image"   : "imgs/pages/light_flag.png",  
+        },
+        {
+            "slug"    : "testing-a-page",
+            "label"   : "Sample page 2 ada image"
+        },
+    ]
+};
+		        </pre>	   
+		        To get the pages slug, <span class="codex">WordPress admin panel > Pages > All pages</span>. Then click <span class="codex">quick edit</span> on the page item.      
+		        <br /><img src="assets/images/slug_pages.png" style="margin-top:10px;border:1px solid #333; margin-bottom:30px" />
+		    
+		    </li>
+			<li>
+				Actually there is no step 5, just hit Run button to see it in action :)
+			</li>	
+		</ol>
+		
+
+
+		<h3 id="skin"><strong>G) Customizing skins</strong> - <a href="#toc">top</a></h3>
+
+		<p>Skin files are under <span class="codex">skin/</span> folder. The code structure is quite easy and self-explained. To make tableview with gradient color, you need to set <span class="codex">skin.RECENT_TV_GRADIENT</span> and <span class="codex">skin.CATEG_TV_GRADIENT</span> in the bottom section. Otherwise, if you want to use plain color, make sure to comment them.</p>
+
+		<p><a href="skin.html">Click here to see available pre-made skins</a></p>
+
+		<pre>
+var skin = {
+
+    <span class="comment">// recent news title bar color and image</span>
+    <span class="comment">// if use image, bar color and title should empty</span>
+    <span class="comment">// if use text title, bar image should empty</span>
+    "RECENT_BAR_IMAGE"     : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "RECENT_BAR_COLOR"     : "#9f0007", <span class="comment">// example: #ff840a</span>
+
+    <span class="comment">// category title bar color and image</span>
+    <span class="comment">// if use image, bar color and title should empty</span>
+    <span class="comment">// if use text title, bar image should empty</span>
+    "CATEG_BAR_IMAGE"     : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "CATEG_BAR_COLOR"     : "#9f0007", <span class="comment">// example: #ff840a</span>
+    "CATEG_DASHBOARD_BGCOLOR" : "#333",
+
+    <span class="comment">// blog post title bar color and image</span>
+    <span class="comment">// if use image, bar color should empty</span>
+    <span class="comment">// if use text title, bar image should empty</span>
+    "POST_BAR_IMAGE"      : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "POST_BAR_COLOR"      : "#9f0007", <span class="comment">// example: #ff840a</span>
+
+    <span class="comment">// about tab bar color and image</span>
+    <span class="comment">// if use image, bar color and title should empty</span>
+    <span class="comment">// if use text title, bar image should empty</span>
+    "ABOUT_BAR_IMAGE"     : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "ABOUT_BAR_COLOR"     : "#9f0007", <span class="comment">// example: #ff840a</span>
+
+    "WEBVIEW_BAR_IMAGE"   : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "WEBVIEW_BAR_COLOR"   : "#9f0007", <span class="comment">// example: #ff840a</span>
+
+    "TWITTER_BAR_IMAGE"   : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "TWITTER_BAR_COLOR"   : "#9f0007", <span class="comment">// example: #ff840a</span>
+    
+    "PAGES_BAR_IMAGE"     : "",        <span class="comment">// example: imgs/wpapp.png, size: 320x45</span>
+    "PAGES_BAR_COLOR"     : "#9f0007", <span class="comment">// example: #ff840a</span>
+
+    <span class="comment">// table view for recent news</span>
+    "RECENT_TV_BGCOLOR"    : "",   
+    "RECENT_TV_BGCOLOR_ALT": "",   
+    "RECENT_TV_SEPARATOR_COLOR": "#000",   
+    "RECENT_TV_TITLE_COLOR": "#fff",   
+    "RECENT_TV_META_COLOR" : "#fff",  
+
+    <span class="comment">// table view for categories</span>
+    "CATEG_TV_BGCOLOR"    : "",   
+    "CATEG_TV_BGCOLOR_ALT": "",   
+    "CATEG_TV_SEPARATOR_COLOR": "#000",   
+    "CATEG_TV_TITLE_COLOR": "#fff",   
+    "CATEG_TV_META_COLOR" : "#fff",  
+    
+    <span class="comment">// table view for twitter</span> 
+    "TWITTER_TV_BGCOLOR"    : "",   
+    "TWITTER_TV_BGCOLOR_ALT": "",   
+    "TWITTER_TV_SEPARATOR_COLOR": "#000",   
+    "TWITTER_TV_TITLE_COLOR": "#fff",   
+    "TWITTER_TV_META_COLOR" : "#fff", 
+    
+    <span class="comment">// table view for pages</span> 
+    "PAGES_TV_BGCOLOR"    : "#404040",   
+    "PAGES_TV_BGCOLOR_ALT": "#272727",   
+    "PAGES_TV_TITLE_COLOR": "#fff",  
+
+    "DUMMY" : ""   
+};
+
+skin.RECENT_TV_GRADIENT = {
+  type:'linear',
+  colors:[ {color:'#404040',position:0.0},{color:'#2f2f2f',position:0.5},{color:'#272727',position:1.0} ]
+};
+
+skin.CATEG_TV_GRADIENT = {
+  type:'linear',
+  colors:[ {color:'#404040',position:0.0},{color:'#2f2f2f',position:0.5},{color:'#272727',position:1.0} ]
+};
+
+skin.TWITTER_TV_GRADIENT = {
+  type:'linear',
+  colors:[ {color:'#404040',position:0.0},{color:'#2f2f2f',position:0.5},{color:'#272727',position:1.0} ]
+};
+		</pre>
+
+
+    <h3 id="i18n"><strong>H) i18n localization</strong> - <a href="#toc">top</a></h3>
+
+    <p>WpApp strings are stored in <span class="codex">/i18n/[language_code]/strings.xml</span>. You can easily change the strings in this file. If you want to make translation, create a new folder under <span class="codex">i18n</span> with the name is language code. For an example, I have put Indonesian translation with folder name <span class="codex">id</span>.</p>
+
+    <p>Code structure:</p>
+
+    <pre>
+&lt;?xml version="1.0" encoding="UTF-8"?>
+&lt;resources>
+    &lt;string name="wpapp_recent">Recent News&lt;/string>
+    &lt;string name="wpapp_categories">Categories&lt;/string>
+    &lt;string name="wpapp_pages">Pages&lt;/string>
+    &lt;string name="wpapp_twitter">Twitter&lt;/string>
+    &lt;string name="wpapp_about">About&lt;/string>
+
+    &lt;string name="recent_news">Recent News&lt;/string>
+
+    &lt;string name="categ_categories">Categories&lt;/string>
+
+    &lt;string name="about">About&lt;/string>
+    &lt;string name="about_reset_data">Reset Data&lt;/string>
+    &lt;string name="about_alert">Do you want to reset data?&lt;/string>
+    &lt;string name="about_yes">Yes&lt;/string>
+    &lt;string name="about_no">No&lt;/string>
+    &lt;string name="about_contact_webmaster">Contact Webmaster&lt;/string>
+    &lt;string name="about_tell_a_friend">Tell a Friend&lt;/string>
+    &lt;string name="about_visit_website">Visit Website&lt;/string>
+    &lt;string name="about_terms_and_conditions">Terms &amp; Conditions&lt;/string>
+    &lt;string name="about_privacy_policy">Privacy Policy&lt;/string>
+
+    &lt;string name="share">Share&lt;/string>
+    &lt;string name="share_this_on">Share this on...&lt;/string>
+    &lt;string name="share_email">Email&lt;/string>
+    &lt;string name="share_cancel">Cancel&lt;/string>
+
+    &lt;string name="post_source">Source&lt;/string>
+
+    &lt;string name="indicator_loading">Loading...&lt;/string>
+
+    &lt;string name="ptr_pull_to_reload">Pull to reload&lt;/string>
+    &lt;string name="ptr_last_updated">Last Updated: &lt;/string>
+    &lt;string name="ptr_pull_down_to_refresh">Pull down to refresh...&lt;/string>
+    &lt;string name="ptr_release_to_refresh">Release to refresh...&lt;/string>
+    &lt;string name="ptr_reloading">Reloading...&lt;/string>
+
+    &lt;string name="webmaster_subject">Iphone app feedback&lt;/string>
+    &lt;string name="webmaster_body">&lt;/string>
+    &lt;string name="tell_friend_subject">Interesting iphone app&lt;/string>
+    &lt;string name="tell_friend_body">I'd like to share an interesting iphone app.&lt;/string>
+    
+    &lt;string name="twitter">Twitter Posts&lt;/string>
+    &lt;string name="pages">Pages&lt;/string>
+    &lt;string name="pages_available">Available Pages&lt;/string>
+
+    &lt;string name="youtube">Youtube&lt;/string>
+    &lt;string name="facebook">Facebook&lt;/string>
+    &lt;string name="flickr">Flickr&lt;/string>
+
+&lt;/resources>
+    </pre>
+
+    <p class="note">In order to use this feature, you must do deployment with Titanium Studio. Deployment with XCODE will not render the correct strings.</p>
+
+
+
+    <h3 id="links"><strong>I) Useful links</strong> - <a href="#toc">top</a></h3>
+
+    <ul>
+      <li><a target="_blank" href="http://developer.appcelerator.com/questions/newest">Titanium Community Questions & Answers</a></li>
+      <li><a target="_blank" href="https://wiki.appcelerator.org/display/guides/Titanium+Compatibility+Matrix#TitaniumCompatibilityMatrix-iOS">Titanium Compatibility Matrix</a></li>
+    </ul> 
+
+
+
+		<h3 id="credits"><strong>J) Sources and credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following icons and photos.
+		
+		<ul>
+			<li>Icons from <a target="_blank" href="http://developer.appcelerator.com/blog/2010/12/festivus-celebration-day-two-airing-of-grievances.html">Appcelerator Icon Package</a> (Apache 2.0 license for developers)</li>
+			<li>Icons from <a target="_blank" href="http://glyphish.com/">glyphish.com</a> (Free version)</li>
+            <li>Photos from <a target="_blank" href="http://photos8.org">Photos8</a></li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing WpApp. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the template on CodeCanyon, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p> 
+		
+		<p class="append-bottom alt large"><strong>Dody Rachmat Wicaksono</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

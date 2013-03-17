@@ -1,0 +1,299 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head lang="en">
+	<meta http-equiv="content-type" content="text/html;charset=utf-8">
+	<title>Store App Template</title>
+	<!-- Framework CSS -->
+	<link rel="stylesheet" href="assets/blueprint-css/screen.css" type="text/css" media="screen, projection">
+	<link rel="stylesheet" href="assets/blueprint-css/print.css" type="text/css" media="print">
+	<!--[if lt IE 8]><link rel="stylesheet" href="assets/blueprint-css/ie.css" type="text/css" media="screen, projection"><![endif]-->
+	<link rel="stylesheet" href="assets/blueprint-css/plugins/fancy-type/screen.css" type="text/css" media="screen, projection">
+	<style type="text/css" media="screen">
+		p, table, hr, .box { margin-bottom:25px; }
+		.box p { margin-bottom:10px; }
+		td { vertical-align : top; }
+		td div, p strong{ white-space: nowrap; }
+		pre{ font-size: 11px; background-color : #ccc; padding: 5px;}
+		pre strong{ background-color : #aaa; padding : 2px; }
+	</style>
+</head>
+
+
+<body>
+	<div class="container">
+	
+		<h3 class="center alt">StoreApp Template v1.3 Documentation by Mode54.com</h3>
+		
+		<hr>
+		
+		<h1 class="center">Store App Template</h1>
+		
+		<div class="borderTop">
+			<div class="span-6 colborder info prepend-1">
+				<p class="prepend-top">
+					<strong>
+					Created: 09/27/2011</br>
+					Last Modified: 02/28/2012</br>
+					By: <a href="http://Mode54.com">Mode54.com</a></br>
+					Support: <a href="http://bit.ly/StoreAppSupport">StoreApp Forum</a></br>
+					Twitter: <a href="http://bit.ly/TweetMode54">@ModeFiftyFour</a></br>
+					Facebook: <a href="http://on.fb.me/ModeFiftyFour">ModeFiftyFour Page</a></br>
+					Google+: <a href="http://bit.ly/Mode54Plus">ModeFiftyFour+</a>
+					</strong>
+				</p>
+			</div><!-- end div .span-6 -->		
+	
+			<div class="span-12 last">
+				<p class="prepend-top append-0">Thank you for purchasing our Titanium StoreApp Template. 
+					If you have any questions that are beyond the scope of this help file, please post
+					your question, feedback, ideas or compliments on <a href="http://bit.ly/Mode54Forum">our community forum</a>. 
+					You can also keep up with the latest news and updates on <a href="http://bit.ly/Mode54Plus">Google+</a>, <a href="http://on.fb.me/ModeFiftyFour">Facebook</a> or on <a href="http://bit.ly/TweetMode54">Twitter</a>.</p>
+					<p>Thanks again for your purchase!</p>
+			</div>
+		</div><!-- end div .borderTop -->
+		
+		<hr>
+		
+		<h2 id="toc" class="alt">Table of Contents</h2>
+		<ol class="alpha">
+			<li><a href="#intro">Intro</a></li>
+			<li><a href="#ui">Store UI</a></li>
+			<li><a href="#setup">Setup</a></li>
+			<li><a href="#fulfillment">Order fulfillment</a></li>
+			<li><a href="#advanced">Advanced Customization</a></li>
+			<li><a href="#updates">Updates</a></li>
+			<li><a href="#credits">Sources and Credits</a></li>
+		</ol>
+
+		<hr>
+		<h3 id="intro"><strong>Intro</strong> - <a href="#toc">top</a></h3>
+		<p>This app template is designed for Appcelerator Titanium Mobile projects (iOS only). 
+			If you are not familiar with the Titanium platform then refer to the 
+			<a href="http://wiki.appcelerator.org/display/guides/Getting+Started+with+Titanium">Getting Started with Titanium</a> guide.</p>
+		<p>The goal of this template is to give you a foundation for your store application. 
+			This template includes all the windows required for a user to browse 
+			products and manage a shopping cart.</p>
+		<p>There's even code to handle transactions via PayPal (<a href="http://bit.ly/oBS4Al">PayPal Module v1.4</a> required). 
+			Here is a great <a href="http://bit.ly/pa6QvN">video on installing the PayPal module</a>. You will also need to configure the PayPal settings in the configuration file.
+			To handle <a href="http://en.wikipedia.org/wiki/Order_fulfillment">order fulfillment</a> 
+			you will have to add hooks to your backend/serverside 
+			system (See <a href="#fulfillment">Order fulfillment</a>).</p>
+		<hr>
+		<h3 id="ui"><strong>Store UI</strong> - <a href="#toc">top</a></h3>
+		<p>Here is a breakdown of the customizable sections of the UI. The home and product detail screen cover all the customizable formats in the app. The same data/layout is used in other places on the app (like Product List)</p>
+		<p><img src="assets/images/ui-home.png"></p>
+		<p><img src="assets/images/ui-product-detail.png"></p>
+		<hr>
+		<h3 id="setup"><strong>Setup</strong> - <a href="#toc">top</a></h3>
+		<p>This template contains the core files required to setup your store app. 
+			Setup is super easy! Simply create a new 
+			<a href="http://wiki.appcelerator.org/display/tis/Getting+Started+with+Titanium+Studio#GettingStartedwithTitaniumStudio-HelloWorld%5C%21">Titanium project</a>. 
+			Delete all the files in the project Resources folder. 
+			Then copy all the files from the <code>StoreApp-Template/Resources</code> 
+			folder over to the project Resources folder.</p>
+		<p>Now all you need to do is customize your application and add products. 
+			You can customize using the <code>Resources/configuration.js</code> file. Open the 
+			file up in your editor and update the values for each key.</p>
+		<p>Here's a breakdown of each configuration setting:</p>
+		<pre>{
+	<strong>// Background Color for the Spotlight section</strong>
+	"SPOTLIGHT_BG_COLOR" : "#191919",
+
+	<strong>// Background Image for the Spotlight section (not required)</strong>
+	"SPOTLIGHT_BG_IMAGE" : null,
+
+	<strong>// Default thumb image</strong>
+	"PRODUCTS_DEFAULT_THUMB_IMAGE" : "path/to/default_thumb.png",
+
+	<strong>// Default main image</strong>
+	"PRODUCTS_DEFAULT_MAIN_IMAGE" : "path/to/default_main.png",
+
+	<strong>// Default spotlight image</strong>
+	"PRODUCTS_DEFAULT_SPOTLIGHT_IMAGE" : "path/to/default_spotlight.png",
+
+	<strong>// Info screens (New format in v1.1)</strong>
+	"INFO_SCREENS" : [
+		<strong>Row One</strong>
+		{
+			"TITLE" : "About Us",
+			"URL"   : "http://www.your-domain.com/path/to/about_page"
+		},
+		<strong>Row Two</strong>
+		{
+			"TITLE" : "Contact Us",
+			"URL"   : "http://www.your-domain.com/path/to/contact_page"
+		}
+	],
+
+	<strong>// PayPal App ID Issued by PayPal... set to "null" for testing (REQUIRED)</strong>
+	"PAYPAL_APP_ID" : "null",
+
+	<strong>// PayPal payment recipient email (so you get paid)</strong>
+	"PAYPAY_RECIPIENT" : "add_email_here",
+
+	<strong>// PayPal transaction type (HARD_GOODS, SERVICE or PERSONAL)</strong>
+	"PAYPAL_TRANSACTION_TYPE" : "HARD_GOODS",
+
+	<strong>// PayPal payment environment (LIVE, SANDBOX or NONE)</strong>
+	"PAYPAL_ENVIRONMENT" : "SANDBOX",
+
+	<strong>// Whether or not to select/send PayPal shipping information</strong>
+	"PAYPAL_ENABLE_SHIPPING" : false,
+
+	<strong>// Merchant Name used in PayPal transaction (default to app name)</strong>
+	"MERCHANT_NAME" : Ti.App.name,
+
+	<strong>// URL for product list on server</strong>
+	"PRODUCT_LIST_URL" : "http://www.your-domain.com/path/to/Products.js",
+
+	<strong>// Successful Payment Message (New in v1.1)</strong>
+	"PAYMENT_SUCCESS_MESSAGE" : {
+
+		// Title for success message
+		"TITLE"   : "Payment successful!",
+
+		// Success message to display
+		"MESSAGE" : "Thank You for your purchase!"
+	}
+}</pre>
+		<p>Next step is to add products to your store application. To do this you need to 
+			create a product list file. The file must be in JSON format. There is an 
+			example file in the <code>Resources/data/Products.js</code>.</p>
+		<p>Here's a breakdown of a product entry:</p>
+		<pre>{
+	<strong>// Product Name</strong>
+	"name" : "Magical Unicorn",
+
+	<strong>// Product ID</strong>
+	"id" : "101010",
+
+	<strong>// Price</strong>
+	"price" : 999999.99,
+
+	<strong>// Groups are used to orginize products in the store</strong>
+	"groups" : {
+
+		<strong>// Add to spotlight section.</strong>
+		<strong>// Requires spotlight image in "imgs" settings)</strong>
+		"spotlight" : true,
+
+		<strong>// Add to featured section</strong>
+		"featured" : false,
+
+		<strong>// Assign product to a category</strong>
+		"category" : "Pets"
+    },
+
+	<strong>// "desc" is used in various places to</strong>
+	<strong>// describe or better yet sell your product</strong>
+	"desc" : {
+
+		<strong>// A short description of the product</strong>
+		"short" : "An awesome Unicorn that's Magical!",
+
+		<strong>// A long description of the product. You can add HTML tags.</strong>
+		"long" : "&lt;p&gt;The &lt;strong&gt;unicorn&lt;/strong&gt; is a legendary magical  animal from European folklore that resembles a white horse with a large, pointed, spiraling horn projecting from its forehead, and sometimes a goat's beard.&lt;/p&gt;&lt;p&gt;Buy One Now! It's Magical!!&lt;/p&gt;"
+	},
+
+	<strong>// Images to show show off the product ("main" and "thumb" are required).</strong>
+	"imgs" : {
+
+		<strong>// URL for the main image of this product (default size = 133x100)</strong>
+		"main" : "http://your-domain.com/path/to/main_img.png",
+
+		<strong>// URL for the thumbnail image of this product (default size = 75x56)</strong>
+		"thumb" : "http://your-domain.com/path/to/thumb.png",
+
+		<strong>// URL for the spotlight image of this product. Only required if this</strong>
+		<strong>// product is included in the spotlight group (default size = 322x210)</strong>
+		"spotlight" : "http://your-domain.com/path/to/spotlight_img.png"
+    },
+
+	<strong>// Options for product (ex. size, color, etc...)</strong>
+	"options" : [
+		{
+			<strong>// Name of option</strong>
+			"name" : "color",
+
+			<strong>// Enable multiple selections</strong>
+			"multiple" : false,
+
+			<strong>// List of selections for this option</strong>
+			"selections" : ["White", "Brown", "Black"]
+		}
+}</pre>
+		<p>That's it!! Your Store App Template is ready to get hooked up to your backend/server fulfillment system. Use the methods in the next section to send order information to your system.</p>
+		<hr>
+		
+		<h3 id="fulfillment"><strong>Order fulfillment</strong> - <a href="#toc">top</a></h3>
+		<p>You must connect the application with your order fulfillment system before you ship your new store app. This might be a simple email script or a complex third party platform. Either way you'll need the order information</p> 
+		<p>The <code>Resources/ProcessOrder.js</code> file contains the handler functions you can use to quickly integrate your backend with the app. More details on each function below.</p>
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Arguments</th>
+					<th>Description</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>ProcessOrder.success()</td>
+					<td>
+						<div><em>order</em> (JSON)</div>
+						<div><em>transactionId</em> (String)</div>
+					</td>
+					<td>This function is required to fulfill orders. The <code>order</code> JSON object contains all the items the user has purchased. The <code>transactionId</code> is what PayPal has returned for a successful order.</td>
+				</tr>
+				<tr>
+					<td>ProcessOrder.cancelled()</td>
+					<td>
+						<div><em>order</em> (JSON)</div>
+					</td>
+					<td>This is called when the order was cancelled for any reason. The <code>order</code> JSON object contains all the items the user had in their cart before they cancelled the order. You can use this for analytics.</td>
+				</tr>
+				<tr>
+					<td>ProcessOrder.failed()</td>
+					<td>
+						<div><em>order</em> (JSON)</div>
+						<div><em>errorCode</em> (String)</div>
+						<div><em>errorMessage</em> (String)</div>
+					</td>
+					<td>This is called when the order fails for any reason. The <code>order</code> JSON object contains all the items the user tried to purchased. The <code>errorCode</code> and <code>errorMessage</code> can be used to track down why the order failed and alert the user.</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+
+		<h3 id="advanced"><strong>Advanced Customization</strong> - <a href="#toc">top</a></h3>
+		<p>Your app is complete and ready for the App Store! But what if you want more customizations? If your an intermediate to advanced Titanium developer you can completely customize the application to your hearts content. Each JS file contains comments and well formatted code. If you have any questions or features you would like to see included in this template please contact us using <a href="http://bit.ly/StoreAppSupport">our support forum</a>.</p>
+		<p></p>
+
+		<hr>
+		
+		<h3 id="updates"><strong>Updates</strong> - <a href="#toc">top</a></h3>
+
+		<p>Currently we can't notify you when we release a new version, find a bug, or announce any news about the template via CodeCanyon. The only way to know when a new version is up is to sign up to <a href="http://modefiftyfour.com/">our newsletter</a> or by following us on any of our social networks (<a href="http://bit.ly/Mode54Plus">Google+</a>, <a href="http://on.fb.me/ModeFiftyFour">Facebook</a> or on <a href="http://bit.ly/TweetMode54">Twitter</a>)</p>
+
+		<hr>
+		
+		<h3 id="credits"><strong>Sources and Credits</strong> - <a href="#toc">top</a></h3>
+		
+		<p>I've used the following icons and products.</p>
+		
+		<ul>
+			<li>Icons from <a href="http://bit.ly/qbSsx2">Appcelerator Icon Package</a> (Apache 2.0 license for developers)</li>
+			<li>Products and Images in the sample store from <a href="http://bit.ly/rockable_press">RockablePress</a> (A Envato company. Use of those images is <a href="http://bit.ly/pjyE0D">granted to Authors in the Envato marketplace</a>)</li>
+		</ul>
+		
+		<hr>
+		
+		<p>Once again, thank you so much for purchasing this template. As I said at the beginning, I'd be glad to help you if you have any questions relating to this template. No guarantees, but I'll do my best to assist. If you have a more general question relating to the Titanium, you might consider visiting the <a href="http://developer.appcelerator.com/questions/created">Appcelerator support forums</a> and posting your question there or on <a href="http://stackoverflow.com/questions/tagged/titanium">StackOverflow</a>.</p>
+		<p>We also publish a blog about Titanium called <a href="http://TiHelp.me">TiHelp.me</a>. Check it out if your looking for tips, tricks and tutorials on creating Titanium applications.</p> 
+		
+		<p class="append-bottom alt large"><strong>Mode54.com</strong></p>
+		<p><a href="#toc">Go To Table of Contents</a></p>
+		
+		<hr class="space">
+	</div><!-- end div .container -->
+</body>
+</html>

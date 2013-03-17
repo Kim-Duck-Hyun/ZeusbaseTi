@@ -1,0 +1,37 @@
+Logfile initialized
+[INFO] logfile = /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/build.log
+[DEBUG] /Users/hyokosdeveloper/Library/Application Support/Titanium/mobilesdk/osx/2.1.0.GA/android/builder.py simulator GeoWebProject /SDK/Frameworks/Android/android-sdk-macosx /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject com.zeusdeveloper.GeoWebProject 7 WVGA800 /127.0.0.1:59550
+[INFO] Building GeoWebProject for Android ... one moment
+[INFO] Titanium SDK version: 2.1.0 (06/28/12 12:16 6e3cab6)
+[DEBUG] Waiting for device to be ready ...
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[TRACE] adb devices returned 1 devices/emulators
+[DEBUG] Device connected... (waited 15 seconds)
+[DEBUG] waited 15.088136 seconds on emulator to get ready
+[INFO] Waiting for the Android Emulator to become available
+[DEBUG] com.zeusdeveloper.GeoWebProject installed? True
+[INFO] Fastdev server running, deploying in Fastdev mode
+[INFO] Copying CommonJS modules...
+[INFO] Copying project resources..
+[TRACE] COPYING MODIFIED FILE: /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/ui/ApplicationWindow.js => /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/build/android/bin/assets/Resources/ui/ApplicationWindow.js
+[INFO] Tiapp.xml unchanged, skipping class generation
+[DEBUG] Processing Android resource drawables
+[DEBUG] found drawable-long-land-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-long-land-hdpi/default.png
+[DEBUG] found drawable-long-land-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-long-land-ldpi/default.png
+[DEBUG] found drawable-long-port-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-long-port-hdpi/default.png
+[DEBUG] found drawable-long-port-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-long-port-ldpi/default.png
+[DEBUG] found drawable-notlong-land-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-notlong-land-hdpi/default.png
+[DEBUG] found drawable-notlong-land-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-notlong-land-ldpi/default.png
+[DEBUG] found drawable-notlong-land-mdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-notlong-land-mdpi/default.png
+[DEBUG] found drawable-notlong-port-hdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-notlong-port-hdpi/default.png
+[DEBUG] found drawable-notlong-port-ldpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-notlong-port-ldpi/default.png
+[DEBUG] found drawable-notlong-port-mdpi splash screen at /Users/hyokosdeveloper/Workspaces/Titanium/GeoWebProject/Resources/android/images/res-notlong-port-mdpi/default.png
+[INFO] Waiting for SDCard to become available..
+[INFO] Re-launching application ... GeoWebProject
+[INFO] Launching application ... GeoWebProject
+[TRACE] Launch output: Starting: Intent { act=android.intent.action.MAIN cat=[android.intent.category.LAUNCHER] cmp=com.zeusdeveloper.GeoWebProject/.GeowebprojectActivity }
+
+[INFO] Forwarding host port 59550 to device for debugging.
+[INFO] Android Emulator has exited
